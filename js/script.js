@@ -1,4 +1,10 @@
-window.onload = function(){
+(function(){
+    if(typeof String.prototype.trim !== 'function') {
+          String.prototype.trim = function() {
+            return this.replace(/^\s+|\s+$/g, ''); 
+          }
+    }
+
     function cuttext(text, limit){
         text = text.trim();
         if(text.length <= limit) return text;
@@ -11,16 +17,17 @@ window.onload = function(){
                 text = arr.join();
         return text + '... ';
     }
+
     function changeText(selector, limit){
         this.selector = selector;
-        var text = document.querySelectorAll(selector);
+        var text = document.querySelectorAll('.post_desc');
         var reg = /^\s+$/;
             if(text.length>0){
                 for (var j=0; j<text.length; j++){
                     for(var i=0; i<text[j].childNodes.length; i++){
-                        var childNod = text[j].childNodes[i];
+                        var childNod = text[j].childNodes[i];                                
                         if(childNod.nodeType === 3 && !reg.test(childNod.nodeValue)) 
-                            childNod.textContent = cuttext(childNod.textContent,limit);
+                            childNod.data = cuttext(childNod.data,limit);
                     }
                 }
                 return true;
@@ -34,10 +41,11 @@ window.onload = function(){
         var toggle = document.getElementById(selector1);
         toggle.onclick = function(event){
             event = event || window.event;
-            document.getElementById(selector2).classList.toggle("active");
-            event.preventDefault ? event.preventDefault() : (event.returnValue=false);               
+            event.preventDefault ? event.preventDefault() : (event.returnValue=false);
+            var b = document.getElementById(selector2).classList.toggle("active");                       
         };    
-    }
-    changeText('.post_desc', 215);
+    };
     toggleMenu('toggle-menu','toggle-position');
-}
+    changeText('.post_desc', 215);
+    
+})();

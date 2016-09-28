@@ -160,7 +160,6 @@ body{
     font-family: Georgia;
     font-size: 12px;
     font-style: italic;
-    line-height: 36px;
 }
 .search_field::-webkit-input-placeholder { color: #757f3c;  opacity: 1;letter-spacing: 0.005em;}
 .search_field:-ms-input-placeholder { color: #757f3c;  opacity: 1;letter-spacing: 0.005em;}
@@ -284,7 +283,7 @@ body{
 }
 .header_left_menu-link{
     color: #3b401e;
-    font-size: 1.142rem;
+    font-size: 16px;
     vertical-align: middle;
     letter-spacing: 0.005em;
     margin-right: 6px;
@@ -310,7 +309,7 @@ body{
 }
 .header_right_menu-link{    
     color: #414141;
-    font-size: 0.857rem;
+    font-size: 12px;
     vertical-align: middle;
     letter-spacing: 0.005em;
 }
