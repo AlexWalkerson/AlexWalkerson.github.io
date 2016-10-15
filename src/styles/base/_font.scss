@@ -1,0 +1,78 @@
+// Niagara
+@include font-face("Niagara", font-files(
+  "Niagara/Niagara_Solid.woff", 
+  "Niagara/Niagara_Solid.ttf", 
+  "Niagara/Niagara_Solid.svg"
+  ), 
+"Niagara/Niagara_Solid.eot" ,
+400
+);
+// Myriad Pro
+@include font-face("Myriad Pro", font-files(
+  "Myriad/Myriad_Pro.woff", 
+  "Myriad/Myriad_Pro.ttf", 
+  "Myriad/Myriad_Pro.svg"
+  ), 
+"Myriad/Myriad_Pro.eot" ,
+400,
+normal
+);
+@include font-face("Myriad Pro", font-files(
+  "Myriad/Myriad_Pro_Italic.woff", 
+  "Myriad/Myriad_Pro_Italic.ttf", 
+  "Myriad/Myriad_Pro_Italic.svg"
+  ), 
+"Myriad/Myriad_Pro_Italic.eot" ,
+false,
+italic
+);
+@include font-face("Myriad Pro", font-files(
+  "Myriad/Myriad_Pro_Light.woff", 
+  "Myriad/Myriad_Pro_Light.ttf", 
+  "Myriad/Myriad_Pro_Light.svg"
+  ), 
+"Myriad/Myriad_Pro_Light.eot" ,
+300
+);
+//Icons
+@include font-face("icons", font-files(
+  "Icons/icons.woff2", 
+  "Icons/icons.woff",
+  "Icons/icons.ttf", 
+  "Icons/icons.svg"
+  ), 
+"Icons/icons.eot" ,
+300
+);
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  
+  display: inline-block;
+  width: 1em;
+  margin-right: .2em;
+  margin-left: .2em;
+
+  text-align: center;
+
+  font-variant: normal;
+  text-transform: none;
+
+  line-height: 1em;
+
+  
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+.icon-zoom-in:before { content: '\f07e'; }
+.icon-gplus:before { content: '\f05a'; } 
+.icon-twitter:before { content: '\f099'; }
+.icon-facebook:before { content: '\f09a';}
+.icon-rss:before { content: '\f09e'; } 
+.icon-dribbble:before { content: '\f17d'; } 
+.icon-behance:before { content: '\f1b4'; } 
+

@@ -1,0 +1,88 @@
+$fix-ie: false !default; //true if IE8-
+@import 'mixins/responsive.scss';
+@import "compass/css3";
+
+@import "bootstrap/variables";
+@import 'base/var.scss';
+@import 'base/font.scss';
+@import 'base/help_classes.scss';
+
+@import "bootstrap/mixins";
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+
+@import "mixins/grid";
+
+
+html, body {
+  height: 100%; 
+  font-size: $font-size-base;
+  font-weight: $font-weight;
+  width: 100%;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+html {  
+  @include fix-all {
+    @include respond-and ($sm, $md - 1){
+      font-size: 90%;
+    }
+    @include respond-and ($xs, $sm - 1){
+      font-size: 80%;
+    }
+    @include respond-and ($ss, $xs - 1){
+      font-size: 65%;
+    }
+    @include respond ($ss - 1, max){
+      font-size: 60.5%;
+    }
+  }
+}
+body{  
+  background: $body-bg url("../images/bg.jpg") repeat 0 0;
+}
+.container {
+	@include respond($md){
+		width: 960px;
+	}
+}
+
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  @include display-flex;
+  @include flex-direction(column);
+  .header{
+    position: relative;
+    @include flex(0 0 auto);
+  }  
+  .content {
+  	@include flex(1 0 auto); 
+    @include fix-all{
+      padding: 5.7rem 0 5.3rem;  
+    }
+    @include fix-ie{
+      padding: 80px 0 75px;  
+    }
+  }
+  .footer{
+  	@include flex(0 0 auto);	
+    padding-bottom: 10rem;
+    @include fix-ie{
+      padding-bottom: 140px; 	
+    }
+  }
+}
+@import 'body/header.scss';
+@import 'body/content.scss';
+@import 'body/footer.scss';
+
+
+
+
+

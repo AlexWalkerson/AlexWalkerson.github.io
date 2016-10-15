@@ -1,0 +1,55 @@
+$font-family-base: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.428571429;
+$font-weight: 400;
+$color: #585857;
+$headings-font-weight: $font-weight;
+$body-bg: #fdfcfb;
+
+//Screen:
+$ss: 320px;
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+//Bottstrap vars:
+$grid-gutter-width: 30px;
+
+$line-height-computed: 0;
+$text-color: $color;
+$link-color: $color;
+$link-hover-color: $color;
+$link-hover-decoration: none;
+$headings-small-color: $color;
+
+$font-size-h1: 1em;
+$font-size-h2: 1em;
+$font-size-h3: 1em;
+$font-size-h4: 1em;
+$font-size-h5: 1em;
+$font-size-h6: 1em;
+
+//My
+$nav-link-color: #8d8c8c;
+$nav-link-bg: #fff;
+$nav-social-color: #cfcecd;
+$active-color: #d42819;
+
+//Pagination
+$pagination-color: #b5b3b3;
+$pagination-bg: transparent;
+$pagination-border: #bab7b7;
+$border-radius-base: 2px;
+$pagination-hover-color: #b5b3b3;
+$pagination-hover-bg: #fff;
+$pagination-hover-border: $pagination-border;
+$pagination-active-color: $active-color;
+$pagination-active-bg: #fff;
+$pagination-active-border: $pagination-border;
+$pagination-disabled-color: $pagination-color;
+$pagination-disabled-bg: transparent;
+$pagination-disabled-border: $pagination-border;
+
+
+

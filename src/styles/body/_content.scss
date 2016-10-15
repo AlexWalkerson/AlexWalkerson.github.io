@@ -1,0 +1,241 @@
+/**
+**
+** Title
+**
+**/ 
+.content-title-container{
+	margin-bottom: 2.8rem;
+	@include fix-ie {
+		margin-bottom: 40px;
+	}
+}
+.content-title {
+	font-size: 33px;
+	line-height: 1.2;
+	color: #7e7e7e;
+	span {
+		color: #d42819;
+	}
+	@include fix-all {
+		@include respond-and ($sm, $md - 1){
+			font-size: 2em;
+		}
+		@include respond-and ($xs + 1, $sm - 1){
+			font-size: 1.8em;
+		}
+		@include respond ($xs, max){
+			font-size: 1.4em;
+		}
+	}
+}
+
+/**
+**
+** Portfolio
+**
+**/ 
+.portfolio-container{
+	margin: 0 auto 2.2rem;
+	width: 90%;
+	@include clearfix;
+	@include fix-ie {
+		margin-bottom: 31px;
+	}	
+}
+.portfolio-menu {
+	color: #9b9b9b;
+}
+.portfolio-menu-item {
+	display: inline-block;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+	line-height: 1em;
+	height: 1em;
+	text-transform: uppercase;	
+	padding: 0 2px;
+	&:hover {
+		color: #d42819;
+	}
+}
+
+.portfolio-item {
+	@extend %col-xs-12;
+	@extend %col-sm-4;
+	@extend %col-md-3;
+	padding-bottom: 47px;
+
+}
+.portfolio-single{
+	.portfolio-title {		
+		font-size: 16px;
+		a {
+			color: #4f4e4e;
+		}
+	}	
+	.portfolio-category {
+		color: #868585;
+		font-size: 12px;
+		font-style: normal;
+	}
+}
+.portfolio-img {
+	@include box-shadow(rgba(0, 0, 0, 0.23) 0 0 10px);
+	height: 250px;
+	line-height: 250px;
+	overflow: hidden;
+	text-align: center;
+	background-color: transparent;
+	vertical-align: middle;
+	position: relative;
+	@include respond ($ss + 1) {
+		height: 320px;
+		line-height: 320px;
+	}	
+	@include respond ($sm + 1) {
+		height: 173px;
+		line-height: 173px;
+	}	
+	p {
+		z-index: 2;
+		line-height: $line-height-base;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		height: 27%;
+		margin: auto;
+		color: #9b9b9b;
+	}
+	img {
+		z-index: 1;
+		width: 100%;				
+		position: relative;
+	}
+	img[src$=".png"],img[src$=".jpg"] {
+		@include single-transition(width, 0.7s, ease);
+		z-index: 3;
+	}
+	&:hover {
+		// overflow-y: auto;		
+		img[src$=".png"],img[src$=".jpg"]{		
+			width: 80%;		
+		}
+	}
+}
+.btn-scale {
+	width: 45px;
+	height: 45px;
+	@include box-shadow(rgba(092, 91, 91, 0.22) 0 0 0 8px);
+	@include border-radius(50%);
+	border: none;
+	outline: none;
+	position: absolute;
+	right: 18px;
+	bottom: 28px;
+	font-size: 1.5em;
+	color: #242323;
+	z-index: 5;
+}
+
+/**
+**
+**Pagination
+**
+**/
+.pagination {
+	display: inline-block;
+	padding-left: 0;
+	margin: $line-height-computed 0;
+	border-radius: $border-radius-base;
+
+	> li {
+    display: inline; // Remove list-style and block-level defaults
+    > a,
+    > span {
+    	position: relative;
+      float: left; // Collapse white-space
+      padding: $padding-base-vertical $padding-base-horizontal;
+      line-height: $line-height-base;
+      text-decoration: none;
+      color: $pagination-color;
+      background-color: $pagination-bg;
+      border: 1px solid $pagination-border;
+      margin-left: -1px;
+    }
+    &:first-child {
+    	> a,
+    	> span {
+    		margin-left: 0;
+    		@include border-left-radius($border-radius-base);
+    	}
+    }
+    &:last-child {
+    	> a,
+    	> span {
+    		@include border-right-radius($border-radius-base);
+    	}
+    }
+  }
+
+  > li > a,
+  > li > span {
+  	&:hover,
+  	&:focus {
+  		z-index: 2;
+  		color: $pagination-hover-color;
+  		background-color: $pagination-hover-bg;
+  		border-color: $pagination-hover-border;
+  	}
+  }
+
+  > .active > a,
+  > .active > span {
+  	&,
+  	&:hover,
+  	&:focus {
+  		z-index: 3;
+  		color: $pagination-active-color;
+  		background-color: $pagination-active-bg;
+  		border-color: $pagination-active-border;
+  		cursor: default;
+  	}
+  }
+
+  > .disabled {
+  	> span,
+  	> span:hover,
+  	> span:focus,
+  	> a,
+  	> a:hover,
+  	> a:focus {
+  		color: $pagination-disabled-color;
+  		background-color: $pagination-disabled-bg;
+  		border-color: $pagination-disabled-border;
+  		cursor: $cursor-disabled;
+  	}
+  }
+}
+.pagination-link {
+	@include border-radius($border-radius-base);
+	margin: 0 4px;
+	cursor: pointer;
+	.pagination-item:nth-child(-n + 2):not(.disabled) &,
+	.pagination-item:nth-last-child(-n + 2):not(.disabled) & {
+		@include background-image(linear-gradient(to top, #e8e8e8 0%, #fbf9f9 100%));
+		@include box-shadow(rgba(255, 255, 255, 0.7) 0 0 0 1px inset);
+		&:hover {
+			background: $pagination-hover-bg;
+		}
+	}
+}
+
+
+
+
+
+
+
+
