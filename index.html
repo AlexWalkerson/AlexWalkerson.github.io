@@ -1,403 +1,356 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Index</title>
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-      <script src="js/respond.min.js"></script>
-      <script src="js/classList.min.js"></script>
-    <![endif]-->
-    <link href="css/styles/bootstrap.css" rel="stylesheet">
-    <link href="css/styles/style-adaptive.css" rel="stylesheet">
-    <link href="css/styles/media.css" rel="stylesheet">
-  </head>
-<body>
-<div class="wrapper">
-    <!-- -------------HEADER START------------- -->
-    <header class="header">
-        <div class="container">
-            <div class="header_left col-sm-8 col-xs-12">
-                <a href="#" class="logo" role="banner">
-                    <img src="img/Logo.png" width='126' height='84' alt="" class='logo_pic'>
-                </a>
-                <div class="header_left-body">
-                    <p class="header_desc">                                
-                        <i class="icon-truck header_decs-pic" ></i>
-                        <span class="header_desc-text">FREE SHIPPING ON ALL ORDERS EXTENDED TO JULY 31</span>
-                    </p>
-                    <nav class="header_left-menu">
-                        <ul class="header_menu">
-                            <li class="header_menu-item">
-                                <a href="#" class="header_left_menu-link">Products</a>
-                                <small class="amount"></small>
-                            </li>
-                            <li class="header_menu-item">
-                                <a href="#" class="header_left_menu-link">Buyer’s Guide</a>
-                                <small class="amount"></small>
-                            </li>
-                            <li class="header_menu-item">
-                                <a href="#" class="header_left_menu-link">Blog</a>
-                                <small class="amount"></small>
-                            </li>
-                            <li class="header_menu-item">
-                                <a href="#" class="header_left_menu-link">Your Cart</a>
-                                <small class="amount">(4)</small>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="header_right col-sm-4 col-xs-12">
-                <nav class="header_right_menu">
-                    <ul class="header_menu">
-                        <li class="header_menu-item">
-                            <a href="#" class="header_right_menu-link">My Account</a>
-                        </li>
-                        <li class="header_menu-item">
-                            <a href="#" class="header_right_menu-link">Track Order</a>
-                        </li>
-                        <li class="header_menu-item">
-                            <a href="#" class="header_right_menu-link">Wishlist  </a>
-                        </li>
-                        <li class="header_menu-item">
-                            <a href="#" class="header_right_menu-link">Sign Out </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header-right_search">
-                    <div class="search">
-                        <form action="" class="search_form" method="post">
-                            <input type="text" class="search_field" placeholder="Search Costgro...." name="search_input">
-                            <button type="submit" class="search_submit" name="search_submit">
-                                <i class="icon-search"></i>                                        
-                            </button>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Index</title>
+		<!--[if lte IE 8]>
+	  <script src="dist/ext/js/html5shiv.min.js"></script>
+	  <script src="dist/ext/js/respond.min.js"></script>
+	  <link rel="stylesheet" href="dist/ext/css/icons-ie7.css">
+	  <link rel="stylesheet" href="dist/styles/style-old.css">
+	  <![endif]-->
+	  <!--[if gt IE 8]><!-->
+	  <link rel="stylesheet" href="dist/styles/style.min.css">	
+	  <!--<![endif]-->
 
-                        </form>
-                    </div>
-                </div>      
-            </div>
+	  <script type="text/javascript" src='dist/ext/js/jquery-1.12.0.min.js'></script>
+
+	</head>
+	<body>
+
+		<div class="wrapper">
 
 
-        </div> 
-    </header>
-    <!-- ------------- HEADER END--------------- -->
+			<header class="header"> 
+				
+				<div class="navbar">
+					<div class="container">
+						<div class="row">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>			
 
-    <!-- -------------CONTENT START------------- -->
-    <div class="content">
-        <div class="container grid">
-        <div class="row hidden-xs">
-            <section class="jumbotron">
-                <div class="jumbotron-content">
-                    <h2 class="latest_post-title">Latest Blog Post</h2>
-                    <p class="latest_post-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="btn-conteiner">
-                        <a href="#" class="btn btn-jum">Main button</a>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="row row-offcanvas-left" id="toggle-position">
-            <div class="hidden-md hidden-lg">
-                <a href="#" class="btn btn-toggle-menu" id="toggle-menu">&lArr; Menu</a>
-            </div>
-            <aside class="sidebar col-md-3">
-                <div class="block_content">
-                    <h4 class="block_title">Categories</h4>
-                    <ul class="sidebar_list">
-                        <li class="sidebar_list-item">
-                           <span class='sidebar_list-bg'>
-                            <a href="#" class="sidebar_list-link"><span class="active">Category 1</span></a>
-                            </span>
-                        </li>
-                        <li class="sidebar_list-item">
-                           <span class='sidebar_list-bg'>
-                            <a href="#" class="sidebar_list-link"><span>Category 2</span></a>
-                            </span>
-                        </li>
-                        <li class="sidebar_list-item">
-                           <span class='sidebar_list-bg'>
-                            <a href="#" class="sidebar_list-link"><span>Category 3</span></a>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="block_content">
-                    <h4 class="block_title">archives</h4>
-                    <ul class="sidebar_list">
-                        <li class="sidebar_list-item">
-                           <span class='sidebar_list-bg'>
-                            <a href="#" class="sidebar_list-link"><span>July 2013</span></a>
-                            </span>
-                        </li>
-                        <li class="sidebar_list-item">
-                           <span class='sidebar_list-bg'>
-                               <a href="#" class="sidebar_list-link"><span>June 2013</span></a>
-                           </span>
+								<h1 href="#" class="brand bg-red_bark">Dugon</h1>
 
-                        </li>
-                        <li class="sidebar_list-item">
-                           <span class='sidebar_list-bg'>
-                               <a href="#" class="sidebar_list-link"><span>May 2013</span></a>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="block_content">
-                    <h4 class="block_title">follow us</h4>
-                    <ul class="sidebar_list ">
-                        <li class="sidebar_list-item"> 
-                           <span class='sidebar_list-bg'>                                   
-                                <i class="icon-facebook social" aria-hidden="true"></i>
-                                <a href="#" class="sidebar_list-link"><span>Facebook</span></a>
-                            </span>
-                        </li>
-                        <li class="sidebar_list-item">
-                           <span class='sidebar_list-bg'>
-                            <i class="icon-pinterest social" aria-hidden="true"></i>
-                            <a href="#" class="sidebar_list-link"><span>Pinterest</span></a>
-                            </span>
-                        </li>
-                        <li class="sidebar_list-item">
-                           <span class='sidebar_list-bg'>
-                            <i class="icon-instagram social" aria-hidden="true"></i>
-                            <a href="#" class="sidebar_list-link"><span>Instagram</span></a>
-                            </span>
-                        </li>
-                        <li class="sidebar_list-item">
-                           <span class='sidebar_list-bg'>
-                            <i class="icon-twitter social" aria-hidden="true"></i>
-                            <a href="#" class="sidebar_list-link"><span>Twitter</span></a>
-                            </span>
-                        </li>
-                        <li class="sidebar_list-item">
-                           <span class='sidebar_list-bg'>
-                            <i class="icon-rss social rss" aria-hidden="true"></i>
-                            <a href="#" class="sidebar_list-link"><span>RSS Feed</span></a>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="block_content">
-                    <h4 class="block_title">join newsletter</h4>
-                    <ul class="sidebar_list">
-                        <li class="sidebar_list-item">
-                            <div class="search">
-                                <form action="" class="search_form" method="post">
-                                    <input type="text" class="search_field" placeholder="Enter Your Email"
-                                    name="search_input">
-                                    <button type="submit" class="search_submit" name="search_submit">
-                                        <i class="icon-mail"></i>
-                                    </button>
+							</div>					
 
-                                </form>
-                            </div>
-                        </li>
-                    </ul>    
-                </div>                            
-            </aside>
-            <main class="main col-md-9">
-                <h3 class="block_title">latest posts</h3>
-    
-                <ul class="posts" id='posts'>
+							<div class="collapse navbar-collapse" id="navbar-collapse-1">
+								<div class="social">
+									<a href="#" class="icon-gplus" target="_blank"><span>Google</span></a>
+									<a href="#" class="icon-twitter" target="_blank"><span>Twitter</span></a>
+									<a href="#" class="icon-facebook" target="_blank"><span>Facebook</span></a>
+									<a href="#" class="icon-dribbble" target="_blank"><span>Dribbble</span></a>
+									<a href="#" class="icon-behance" target="_blank"><span>Behance</span></a>
+									<a href="#" class="icon-rss" target="_blank"><span>RSS</span></a>
+								</div>
 
-                    <li class="posts-item clearfix">
-                        <div class="post_pic">
-                            <img  width=199 height=144 src="img/post_pic.jpg" alt="">
-                        </div>
-                        <div class="post_content">
-                            <div class="post_title">
-                                <h2 class="post_title-text">
-                                <a href="" class="post_title-link">New Laws In Washington</a>
-                                </h2>
-                                <div class="views">3</div>
-                            </div>
 
-                            <div class="post_info">
-                                <time datetime="2013-07-12" class="post_info-date">
-                                    <i class="icon-clock social" aria-hidden="true"></i>
-                                    <span>July 12, 2013</span>
-                                </time>
-                                <a href="#" class="post_info-author">                                    
-                                    <i class="icon-user social" aria-hidden="true"></i>
-                                    <span>Joe Shmoe</span>
-                                </a>
-                            </div>
-                            <div class="post_desc">
-                                
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                <a href="#" class="post_desc-link">Read More </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="posts-item clearfix">
-                        <div class="post_pic">
-                            <img  width=199 height=144 src="img/post_pic.jpg" alt="">
-                        </div>
-                        <div class="post_content">
-                            <div class="post_title">
-                                <h2 class="post_title-text">
-                                <a href="" class="post_title-link">New Laws In Washington</a>
-                                </h2>
-                                <div class="views">3</div>
-                            </div>
+								<nav class="nav">
+									<a href="#" class="nav-link active">Home</a>
+									<a href="#" class="nav-link">portfolio</a>
+									<a href="#" class="nav-link">support</a>
+									<a href="#" class="nav-link">blog</a>
+									<a href="#" class="nav-link">contact</a>
+								</nav>
+							</div>
 
-                            <div class="post_info">
-                                <time datetime="2013-07-12" class="post_info-date">
-                                    <i class="icon-clock social" aria-hidden="true"></i>
-                                    <span>July 12, 2013</span>
-                                </time>
-                                <a href="#" class="post_info-author">                                    
-                                    <i class="icon-user social" aria-hidden="true"></i>
-                                    <span>Joe Shmoe</span>
-                                </a>
-                            </div>
-                            <div class="post_desc">
-                                
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                
-                                <a href="#" class="post_desc-link"> Read More </a>
-                            </div>
-                        </div>
-                    </li>
 
-                    <li class="posts-item clearfix">
-                        <div class="post_pic">
-                            <img  width=199 height=144 src="img/post_pic.jpg" alt="">
-                        </div>
-                        <div class="hedden"></div>
-                        <div class="post_content">
-                            <div class="post_title">
-                                <h2 class="post_title-text">
-                                <a href="" class="post_title-link">qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq</a>
-                                </h2>
-                                <div class="views">6663</div>
-                            </div>
 
-                            <div class="post_info">
-                                <time datetime="2013-07-12" class="post_info-date">
-                                    <i class="icon-clock social" aria-hidden="true"></i>
-                                    <span>July 12, 2013</span>
-                                </time>
-                                <a href="#" class="post_info-author">                                    
-                                    <i class="icon-user social" aria-hidden="true"></i>
-                                    <span>Joe Shmoe</span>
-                                </a>
-                            </div>
-                            <div class="post_desc">
-                                 ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg                                
+						</div>
 
-                                <a href="#" class="post_desc-link"> Read More </a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </main>
-        </div>
-    </div>
-    </div>
-    <!-- ------------- CONTENT END--------------- -->
+					</div>
+				</div>
+			</header>
 
-    <!-- -------------FOOTER START------------- -->
-    <footer class="footer">
-        <div class="container">
-           
-            <div class="col-sm-3 col-xs-12">
 
-                    <h4 class="footer-menu_title">CUSTOMER SERVICE</h4>
-                    <ul class="footer-menu_list">
-                        <li class="footer-menu_list-item"><a href="#">Track Order</a></li>
-                        <li class="footer-menu_list-item"><a href="#">Shipping Policy</a></li>
-                        <li class="footer-menu_list-item"><a href="#">No-Hassle Return Policy</a></li>
-                        <li class="footer-menu_list-item"><a href="#">FAQ</a></li>
-                        <li class="footer-menu_list-item"><a href="#">Company Info</a></li>
-                        <li class="footer-menu_list-item"><a href="#">Customer Testimonials</a></li>
-                        <li class="footer-menu_list-item"><a href="#">Privacy Policy</a></li>
-                        <li class="footer-menu_list-item"><a href="#">Sitemap</a></li>
-                    </ul>
 
-            </div>
-            
-            <div class="col-sm-6 col-xs-12">
-                <h4 class="footer-menu_title col-sm-offset-1">SHOP COSTGRO</h4>
-                <div class="col-sm-offset-1 col-sm-5 xs-float">                    
-                    
-                        <ul class="footer-menu_list">
-                            <li class="footer-menu_list-item"><a href="#">Air / HVAC</a></li>
-                            <li class="footer-menu_list-item"><a href="#">Controllers, Timers </a></li>
-                            <li class="footer-menu_list-item"><a href="#">& Meters</a></li>
-                            <li class="footer-menu_list-item"><a href="#">Grow Media</a></li>
-                            <li class="footer-menu_list-item"><a href="#">Grow Systems</a></li>
-                            <li class="footer-menu_list-item"><a href="#">Grow Tents</a></li>
-                            <li class="footer-menu_list-item"><a href="#">Lighting</a></li>
-                            <li class="footer-menu_list-item"><a href="#">Nutrients</a></li>
-                            <li class="footer-menu_list-item"><a href="#">Pest & Disease Control</a></li>
-                        </ul>
-                   
-                </div>
-                <div class="col-sm-6 xs-float">
-                   
-                        <ul class="footer-menu_list second_list">
-                            <li class="footer-menu_list-item"><a href="#">pH / TDS Solutions </a></li>
-                            <li class="footer-menu_list-item"><a href="#">& Meters</a></li>
-                            <li class="footer-menu_list-item"><a href="#">Pots & Containers</a></li>
-                            <li class="footer-menu_list-item"><a href="#">Propagation</a></li>
-                            <li class="footer-menu_list-item"><a href="#">Tools & Accessories</a></li>
-                            <li class="footer-menu_list-item"><a href="#">Grow Trays, Reservoirs</a></li>
-                            <li class="footer-menu_list-item"><a href="#">& Stands</a></li>
-                            <li class="footer-menu_list-item"><a href="#">Water</a></li>
-                        </ul>
-                   
-                </div>
-            </div>
-            
-            <div class="col-sm-3 col-xs-12">
-                      <div class="col-sm-offset-2 col-sm-10">
+			<div class="content">
+				<div class="container">
 
-                        <div class="footer-menu_social">
-                            <h4 class="footer-menu_title">FOLLOW COSTGRO</h4>
-                            <ul class="footer-menu_list">
-                                <li class="footer-menu_list-item">
-                                    <i class="icon-facebook social" aria-hidden="true"></i>
-                                    <a href="">Facebook</a>
-                                </li>
-                                <li class="footer-menu_list-item">
-                                    <i class="icon-pinterest social" aria-hidden="true"></i>
-                                    <a href="">Pinterest</a>
-                                </li>
-                                <li class="footer-menu_list-item">
-                                    <i class="icon-instagram social" aria-hidden="true"></i>
-                                    <a href="">Instagram</a>
-                                </li>
-                                <li class="footer-menu_list-item">
-                                    <i class="icon-twitter social" aria-hidden="true"></i>
-                                    <a href="">Twitter</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-menu_search">
-                            <h4 class="footer-menu_title">SEARCH COSTGRO</h4>
-                            <div class="search">
-                                <form action="" class="search_form" method="post">
-                                    <input type="text" class="search_field" placeholder="Start search..." name="search_input">
-                                    <button type="submit" class="search_submit" name="search_submit">
-                                        <i class="icon-search"></i>
-                                    </button>
+					<div class="row">
+						<div class="content-title-container">
+							<h2 class="content-title text-center">Welcome! This is <span>Dugon</span>, a mutant duck and dragon!<br>
+							and below you can see my portfolio...</h2>
+						</div>						
+					</div>
 
-                                </form>
-                            </div>
-                        </div>
+					<div class="row">
+						<main class="portfolio-content">
+							<div class="portfolio-filter-group">
+								<div class="portfolio-container">
+									<div class="portfolio-menu text-center">
+										<button class="portfolio-menu-item">all</button>/
+										<button class="portfolio-menu-item">painting</button>/
+										<button class="portfolio-menu-item">traditional</button>/
+										<button class="portfolio-menu-item">vector</button>/
+										<button class="portfolio-menu-item">3d</button>
+									</div>
+								</div>
+								
+							</div>
+							
+							<div class="portfolio-container">
 
-                </div>
-            </div>
-            
-            
-        </div> 
-    </footer>
-    <!-- ------------- FOOTER END--------------- -->
-</div>
-<script src="js/script.js"></script>
-</body>
-</html>
+								<div class="portfolio-item">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title"><a href="portfolio/1/index.html" target="_blank">First adaptive</a></h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+										<p>Пока пусто.. <br>но ненадолго.</p>
+										<img src="dist/images/portfolio/first.jpg" alt="first adaptive">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark"></button>
+								</div>
+								<div class="portfolio-item">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper</a></h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+										<p>Пока пусто.. <br>но ненадолго.</p>										
+										<img src="" alt="">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark"></button>
+								</div>
+								<div class="portfolio-item">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper</a></h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+										<p>Пока пусто.. <br>но ненадолго.</p>										
+										<img src="" alt="">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark"></button>
+								</div>
+								<div class="portfolio-item">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper</a></h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+										<p>Пока пусто.. <br>но ненадолго.</p>										
+										<img src="" alt="">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark"></button>
+								</div>
+								<div class="portfolio-item">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper</a></h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+										<p>Пока пусто.. <br>но ненадолго.</p>										
+										<img src="" alt="">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark"></button>
+								</div>
+								<div class="portfolio-item">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper</a></h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+										<p>Пока пусто.. <br>но ненадолго.</p>										
+										<img src="" alt="">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark"></button>
+								</div>
+								<div class="portfolio-item">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper</a></h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+										<p>Пока пусто.. <br>но ненадолго.</p>										
+										<img src="" alt="">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark"></button>
+								</div>
+								<div class="portfolio-item">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper</a></h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+										<p>Пока пусто.. <br>но ненадолго.</p>										
+										<img src="" alt="">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark"></button>
+								</div>
+								<div class="portfolio-item">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper</a></h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+										<p>Пока пусто.. <br>но ненадолго.</p>										
+										<img src="" alt="">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark"></button>
+								</div>
+								<div class="portfolio-item">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper</a></h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+										<p>Пока пусто.. <br>но ненадолго.</p>										
+										<img src="" alt="">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark"></button>
+								</div>
+								<div class="portfolio-item">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper</a></h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+										<p>Пока пусто.. <br>но ненадолго.</p>										
+										<img src="" alt="">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark"></button>
+								</div>
+								<div class="portfolio-item">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper</a></h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+										<p>Пока пусто.. <br>но ненадолго.</p>										
+										<img src="" alt="">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark"></button>
+								</div>								
+
+							</div>
+						</main>
+					</div>
+
+					<div class="row">
+						<div class="portfolio-container text-center">
+							<ul class="pagination">
+								<li class="pagination-item disabled">
+									<a href="#" class="pagination-link" aria-label="First">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li class="pagination-item">
+									<a href="#" class="pagination-link" aria-label="Previous">
+										<span aria-hidden="true">&lsaquo;</span>
+									</a>
+								</li>
+
+								<li class="pagination-item active"><a href="#" class="pagination-link">1 <span class="sr-only">(current)</span></a></li>
+								<li class="pagination-item "><a href="#" class="pagination-link">2</a></li>
+								<li class="pagination-item "><a href="#" class="pagination-link">3</a></li>
+								<li class="pagination-item disabled"><a href="#" class="pagination-link">4</a></li>
+								<li class="pagination-item disabled"><a href="#" class="pagination-link">5</a></li>
+
+								<li class="pagination-item">
+									<a href="#" class="pagination-link" aria-label="Next">
+										<span aria-hidden="true">&rsaquo;</span>
+									</a>
+								</li>
+								<li class="pagination-item disabled">
+									<a href="#" class="pagination-link" aria-label="Last">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</ul>
+						</div>								
+					</div>
+
+				</div>
+			</div>
+
+			<footer class="footer">
+				<div class="container">
+
+					<ul class="footer-list">
+						<li class="footer-item">
+							<strong class="footer-title">Find Something</strong>
+							<p class="footer-text">Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.</p>
+							<div class="search">
+								<form action="" class="form-search">
+									<input type="search" name="search-field" class="search-field" placeholder="Looking for something?"><button class="search-btn" name="search-btn" type="submit">go</button>
+								</form>
+							</div>							
+						</li>
+
+						<li class="footer-item">
+							<strong class="footer-title">Information</strong>
+							<p class="footer-text"> Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. </p>
+							<p class="footer-text">Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum.</p>
+						</li>
+
+						<li class="footer-item">
+							<strong class="footer-title">Search by</strong>
+							<ul class="footer-cat-list">
+								<li><a href="#" class="footer-cat-link">Maecenas</a><span>(2)</span></li>
+								<li><a href="#" class="footer-cat-link">Curabitur et ligula </a><span>(12)</span></li>
+								<li><a href="#" class="footer-cat-link">Ut molestie</a><span>(3)</span></li>
+								<li><a href="#" class="footer-cat-link">Pellentesque facilisis</a><span>(1)</span></li>
+								<li><a href="#" class="footer-cat-link">Integer aliquam</a><span>(0)</span></li>
+								<li><a href="#" class="footer-cat-link">Lorem ipsum</a><span>(1)</span></li>
+								<li><a href="#" class="footer-cat-link">Etiam ullamcorper</a><span>(3)</span></li>
+								<li><a href="#" class="footer-cat-link">Vestibulum commodo</a><span>(9)</span></li>
+								<li><a href="#" class="footer-cat-link">Quisque lorem</a><span>(1)</span></li>
+								<li><a href="#" class="footer-cat-link">Vestibulum </a><span>(23)</span></li>
+								<li><a href="#" class="footer-cat-link">Maecnas</a><span>(2)</span></li>
+								<li><a href="#" class="footer-cat-link">Curabitur et ligula </a><span>12)</span></li>
+								<li><a href="#" class="footer-cat-link">Ut molestie</a><span>(3)</span></li>
+								<li><a href="#" class="footer-cat-link">Pellentesque facilisis</a><span>(1)</span></li>
+								<li><a href="#" class="footer-cat-link">Integer aliquam</a><span>(0)</span></li>
+								<li><a href="#" class="footer-cat-link">Lorem ipsum</a><span>(1)</span></li>
+								<li><a href="#" class="footer-cat-link">Etiam ullamcorper</a><span>(3)</span></li>
+							</ul>
+						</li>						
+					</ul>
+
+
+					<div class="row">
+						<div class="copyright">Alex Liar 2016</div>
+					</div>
+					
+
+
+
+				</div>
+			</footer>
+
+		</div>
+		<script type="text/javascript" src='dist/scripts/build.min.js'></script>
+	</body>
+	</html>
