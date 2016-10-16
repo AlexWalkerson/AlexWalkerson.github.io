@@ -1,28 +1,28 @@
 @font-face {
   font-family: "Niagara";
-  src: url('/second/font/Niagara/Niagara_Solid.eot');
-  src: url('/second/font/Niagara/Niagara_Solid.eot?#iefix') format('embedded-opentype'), url('/second/font/Niagara/Niagara_Solid.woff') format('woff'), url('/second/font/Niagara/Niagara_Solid.ttf') format('truetype'), url('/second/font/Niagara/Niagara_Solid.svg') format('svg');
+  src: url('/font/Niagara/Niagara_Solid.eot');
+  src: url('/font/Niagara/Niagara_Solid.eot?#iefix') format('embedded-opentype'), url('/font/Niagara/Niagara_Solid.woff') format('woff'), url('/font/Niagara/Niagara_Solid.ttf') format('truetype'), url('/font/Niagara/Niagara_Solid.svg') format('svg');
   font-weight: 400; }
 @font-face {
   font-family: "Myriad Pro";
-  src: url('/second/font/Myriad/Myriad_Pro.eot');
-  src: url('/second/font/Myriad/Myriad_Pro.eot?#iefix') format('embedded-opentype'), url('/second/font/Myriad/Myriad_Pro.woff') format('woff'), url('/second/font/Myriad/Myriad_Pro.ttf') format('truetype'), url('/second/font/Myriad/Myriad_Pro.svg') format('svg');
+  src: url('/font/Myriad/Myriad_Pro.eot');
+  src: url('/font/Myriad/Myriad_Pro.eot?#iefix') format('embedded-opentype'), url('/font/Myriad/Myriad_Pro.woff') format('woff'), url('/font/Myriad/Myriad_Pro.ttf') format('truetype'), url('/font/Myriad/Myriad_Pro.svg') format('svg');
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: "Myriad Pro";
-  src: url('/second/font/Myriad/Myriad_Pro_Italic.eot');
-  src: url('/second/font/Myriad/Myriad_Pro_Italic.eot?#iefix') format('embedded-opentype'), url('/second/font/Myriad/Myriad_Pro_Italic.woff') format('woff'), url('/second/font/Myriad/Myriad_Pro_Italic.ttf') format('truetype'), url('/second/font/Myriad/Myriad_Pro_Italic.svg') format('svg');
+  src: url('/font/Myriad/Myriad_Pro_Italic.eot');
+  src: url('/font/Myriad/Myriad_Pro_Italic.eot?#iefix') format('embedded-opentype'), url('/font/Myriad/Myriad_Pro_Italic.woff') format('woff'), url('/font/Myriad/Myriad_Pro_Italic.ttf') format('truetype'), url('/font/Myriad/Myriad_Pro_Italic.svg') format('svg');
   font-style: italic; }
 @font-face {
   font-family: "Myriad Pro";
-  src: url('/second/font/Myriad/Myriad_Pro_Light.eot');
-  src: url('/second/font/Myriad/Myriad_Pro_Light.eot?#iefix') format('embedded-opentype'), url('/second/font/Myriad/Myriad_Pro_Light.woff') format('woff'), url('/second/font/Myriad/Myriad_Pro_Light.ttf') format('truetype'), url('/second/font/Myriad/Myriad_Pro_Light.svg') format('svg');
+  src: url('/font/Myriad/Myriad_Pro_Light.eot');
+  src: url('/font/Myriad/Myriad_Pro_Light.eot?#iefix') format('embedded-opentype'), url('/font/Myriad/Myriad_Pro_Light.woff') format('woff'), url('/font/Myriad/Myriad_Pro_Light.ttf') format('truetype'), url('/font/Myriad/Myriad_Pro_Light.svg') format('svg');
   font-weight: 300; }
 @font-face {
   font-family: "icons";
-  src: url('/second/font/Icons/icons.eot');
-  src: url('/second/font/Icons/icons.eot?#iefix') format('embedded-opentype'), url('/second/font/Icons/icons.woff2') format('woff2'), url('/second/font/Icons/icons.woff') format('woff'), url('/second/font/Icons/icons.ttf') format('truetype'), url('/second/font/Icons/icons.svg') format('svg');
+  src: url('/font/Icons/icons.eot');
+  src: url('/font/Icons/icons.eot?#iefix') format('embedded-opentype'), url('/font/Icons/icons.woff2') format('woff2'), url('/font/Icons/icons.woff') format('woff'), url('/font/Icons/icons.ttf') format('truetype'), url('/font/Icons/icons.svg') format('svg');
   font-weight: 300; }
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "icons";
@@ -978,7 +978,6 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
-    width: 50%;
     height: 27%;
     margin: auto;
     color: #9b9b9b; }
