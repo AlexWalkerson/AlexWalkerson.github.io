@@ -2,11 +2,14 @@ $fix-ie: false !default; //true if IE8-
 @import 'mixins/responsive.scss';
 @import "compass/css3";
 
+//Vars
 @import "bootstrap/variables";
 @import 'base/var.scss';
+
 @import 'base/font.scss';
 @import 'base/help_classes.scss';
 
+//TB
 @import "bootstrap/mixins";
 @import "bootstrap/normalize";
 @import "bootstrap/print";
@@ -14,6 +17,9 @@ $fix-ie: false !default; //true if IE8-
 @import "bootstrap/type";
 
 @import "mixins/grid";
+
+//Plugins
+@import "Plugins/magic_popup.scss";
 
 
 html, body {

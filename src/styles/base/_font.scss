@@ -68,11 +68,13 @@ italic
   -moz-osx-font-smoothing: grayscale;
 
 }
-.icon-zoom-in:before { content: '\f07e'; }
-.icon-gplus:before { content: '\f05a'; } 
-.icon-twitter:before { content: '\f099'; }
-.icon-facebook:before { content: '\f09a';}
-.icon-rss:before { content: '\f09e'; } 
-.icon-dribbble:before { content: '\f17d'; } 
-.icon-behance:before { content: '\f1b4'; } 
+
+.icon-gplus:before     { content: '\f05a'; } 
+.icon-zoom-in:before   { content: '\f07e'; } 
+.icon-link-ext:before  { content: '\f08e'; } 
+.icon-twitter:before   { content: '\f099'; } 
+.icon-facebook:before  { content: '\f09a'; } 
+.icon-rss:before       { content: '\f09e'; } 
+.icon-dribbble:before  { content: '\f17d'; } 
+.icon-behance:before   { content: '\f1b4'; }
 

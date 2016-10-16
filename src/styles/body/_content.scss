@@ -71,7 +71,14 @@
 	.portfolio-title {		
 		font-size: 16px;
 		a {
-			color: #4f4e4e;
+			color: #4f4e4e;		
+			&:hover {
+				text-decoration: underline;
+				color: #868585;
+			}
+			i {
+				float: right;				
+			}
 		}
 	}	
 	.portfolio-category {
@@ -138,6 +145,10 @@
 	font-size: 1.5em;
 	color: #242323;
 	z-index: 5;
+	display: none;
+	@include respond($xs){
+		display: block;
+	}
 }
 
 /**
