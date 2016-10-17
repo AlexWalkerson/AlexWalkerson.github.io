@@ -1402,7 +1402,7 @@ body {
   height: 1em;
   text-transform: uppercase;
   padding: 0 2px; }
-  .portfolio-menu-item:hover {
+  .portfolio-menu-item:hover, .portfolio-menu-item.is-checked {
     color: #d42819; }
 
 .portfolio-item {
@@ -1413,8 +1413,7 @@ body {
   .portfolio-single .portfolio-title a {
     color: #4f4e4e; }
     .portfolio-single .portfolio-title a:hover {
-      text-decoration: underline;
-      color: #868585; }
+      color: #d42819; }
     .portfolio-single .portfolio-title a i {
       float: right; }
 .portfolio-single .portfolio-category {

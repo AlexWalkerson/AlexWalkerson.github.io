@@ -55,8 +55,8 @@
 	height: 1em;
 	text-transform: uppercase;	
 	padding: 0 2px;
-	&:hover {
-		color: #d42819;
+	&:hover, &.is-checked {
+		color: $active-color;
 	}
 }
 
@@ -73,8 +73,7 @@
 		a {
 			color: #4f4e4e;		
 			&:hover {
-				text-decoration: underline;
-				color: #868585;
+				color: $active-color;
 			}
 			i {
 				float: right;				

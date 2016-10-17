@@ -13,9 +13,7 @@
 	  <![endif]-->
 	  <!--[if gt IE 8]><!-->
 	  <link rel="stylesheet" href="dist/styles/style.min.css">	
-	  <!--<![endif]-->
-
-	  <script type="text/javascript" src='dist/ext/js/jquery-3.1.1.min.js' defer></script>
+	  <!--<![endif]-->	  
 
 	</head>
 	<body>
@@ -82,22 +80,20 @@
 
 					<div class="row">
 						<main class="portfolio-content">
-							<div class="portfolio-filter-group">
+							
 								<div class="portfolio-container">
 									<div class="portfolio-menu text-center">
-										<button class="portfolio-menu-item">all</button>/
-										<button class="portfolio-menu-item">painting</button>/
-										<button class="portfolio-menu-item">traditional</button>/
-										<button class="portfolio-menu-item">vector</button>/
-										<button class="portfolio-menu-item">3d</button>
+										<button class="portfolio-menu-item is-checked" data-filter="*">all</button>/
+										<button class="portfolio-menu-item" data-filter=".coding">coding</button>/
+										<button class="portfolio-menu-item" data-filter=".graphic">Graphic design</button>										
 									</div>
 								</div>
 								
-							</div>
 							
-							<div class="portfolio-container">
+							
+							<div class="portfolio-container portfolio-child">
 
-								<div class="portfolio-item">
+								<div class="portfolio-item coding">
 									<figure class="portfolio-single">
 										<figcaption>
 											<h3 class="portfolio-title">
@@ -115,12 +111,12 @@
 									</figure>
 									<button class="btn-scale icon-zoom-in bg-red_bark popup_img" data-mfp-src="dist/images/portfolio/first.jpg"></button>
 								</div>
-								<div class="portfolio-item">
+								<div class="portfolio-item coding">
 									<figure class="portfolio-single">
 										<figcaption>
 											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper<i class="icon-link-ext"></i>
 											</a></h3>
-											<em class="portfolio-category">Graphic design</em>
+											<em class="portfolio-category">Coding</em>
 										</figcaption>
 										<div class="portfolio-img">
 										<p>Пока пусто.. <br>но ненадолго.</p>										
@@ -129,7 +125,7 @@
 									</figure>
 									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
 								</div>
-								<div class="portfolio-item">
+								<div class="portfolio-item graphic">
 									<figure class="portfolio-single">
 										<figcaption>
 											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper<i class="icon-link-ext"></i></a></h3>
@@ -142,7 +138,7 @@
 									</figure>
 									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
 								</div>
-								<div class="portfolio-item">
+								<div class="portfolio-item graphic">
 									<figure class="portfolio-single">
 										<figcaption>
 											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper<i class="icon-link-ext"></i></a></h3>
@@ -358,7 +354,9 @@
 
 		</div>
 
+		<script type="text/javascript" src='dist/ext/js/jquery-3.1.1.min.js'></script>
 		<script type="text/javascript" src='dist/ext/js/jquery.magnific-popup.min.js' defer></script>
+		<script type="text/javascript" src='dist/ext/js/isotope.pkgd.min.js' defer></script>
 		<script type="text/javascript" src='dist/scripts/build.min.js' defer></script>
 	</body>
 	</html>
