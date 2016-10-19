@@ -24,7 +24,6 @@ $fix-ie: false !default; //true if IE8-
 
 html, body {
   height: 100%; 
-  font-size: $font-size-base;
   font-weight: $font-weight;
   width: 100%;
   padding: 0;
@@ -32,6 +31,7 @@ html, body {
   margin-right: 0;
 }
 html {  
+  font-size: $font-size-grid;
   @include fix-all {
     @include respond-and ($sm, $md - 1){
       font-size: 90%;
@@ -48,6 +48,7 @@ html {
   }
 }
 body{  
+  font-size: $font-size-base;
   background: $body-bg url("../images/bg.jpg") repeat 0 0;
 }
 .container {

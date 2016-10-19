@@ -3,39 +3,35 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Index</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="dist/styles/style.min.css">	
+		<!--<![endif]-->
 		<!--[if lte IE 8]>
+		<link rel="stylesheet" href="dist/styles/style-old.min.css">
+		<link rel="stylesheet" href="dist/ext/css/icons-ie7.css">	 
 	  <script src="dist/ext/js/html5shiv.min.js"></script>
-	  <script src="dist/ext/js/respond.min.js"></script>
-	  <link rel="stylesheet" href="dist/ext/css/icons-ie7.css">
-	  <link rel="stylesheet" href="dist/styles/style-old.css">
+	  <script src="dist/ext/js/respond.min.js"></script>	  
 	  <![endif]-->
-	  <!--[if gt IE 8]><!-->
-	  <link rel="stylesheet" href="dist/styles/style.min.css">	
-	  <!--<![endif]-->	  
-
 	</head>
 	<body>
-
 		<div class="wrapper">
 
-
-			<header class="header"> 
-				
+			<!-- Header -->
+			<header class="header"> 				
 				<div class="navbar">
 					<div class="container">
 						<div class="row">
+
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
 									<span class="sr-only">Toggle navigation</span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
-								</button>			
-
+								</button>		
 								<h1 href="#" class="brand bg-red_bark">Dugon</h1>
-
 							</div>					
 
 							<div class="collapse navbar-collapse" id="navbar-collapse-1">
@@ -48,7 +44,6 @@
 									<a href="#" class="icon-rss" target="_blank"><span>RSS</span></a>
 								</div>
 
-
 								<nav class="nav">
 									<a href="#" class="nav-link active">Home</a>
 									<a href="#" class="nav-link">portfolio</a>
@@ -56,43 +51,38 @@
 									<a href="#" class="nav-link">blog</a>
 									<a href="#" class="nav-link">contact</a>
 								</nav>
-							</div>
-
-
+							</div><!-- /navbar-collapse -->
 
 						</div>
-
 					</div>
-				</div>
+				</div><!-- /navbar -->
 			</header>
 
-
-
+			<!-- Content -->
 			<div class="content">
 				<div class="container">
 
 					<div class="row">
 						<div class="content-title-container">
-							<h2 class="content-title text-center">Welcome! This is <span>Dugon</span>, a mutant duck and dragon!<br>
-							and below you can see my portfolio...</h2>
+							<h2 class="content-title text-center">
+								Welcome! This is <span>Dugon</span>, a mutant duck and dragon!<br>
+								and below you can see my portfolio...
+							</h2>
 						</div>						
 					</div>
 
 					<div class="row">
 						<main class="portfolio-content">
-							
-								<div class="portfolio-container">
-									<div class="portfolio-menu text-center">
-										<button class="portfolio-menu-item is-checked" data-filter="*">all</button>/
-										<button class="portfolio-menu-item" data-filter=".coding">coding</button>/
-										<button class="portfolio-menu-item" data-filter=".graphic">Graphic design</button>										
-									</div>
-								</div>
-								
-							
-							
-							<div class="portfolio-container portfolio-child">
 
+							<div class="portfolio-container">
+								<div class="portfolio-menu text-center">
+									<button class="portfolio-menu-item is-checked" data-filter="*">all</button>/
+									<button class="portfolio-menu-item" data-filter=".coding">coding</button>/
+									<button class="portfolio-menu-item" data-filter=".graphic">Graphic design</button>										
+								</div>
+							</div>
+
+							<div class="portfolio-container portfolio-child">
 								<div class="portfolio-item coding">
 									<figure class="portfolio-single">
 										<figcaption>
@@ -105,8 +95,8 @@
 											<em class="portfolio-category">Coding</em>
 										</figcaption>
 										<div class="portfolio-img">
-										<p>Пока пусто.. <br>но ненадолго.</p>
-										<img src="dist/images/portfolio/first.jpg" alt="first adaptive">
+											<p>Пока пусто.. <br>но ненадолго.</p>
+											<img src="dist/images/portfolio/first.jpg" alt="first adaptive">
 										</div>
 									</figure>
 									<button class="btn-scale icon-zoom-in bg-red_bark popup_img" data-mfp-src="dist/images/portfolio/first.jpg"></button>
@@ -114,13 +104,17 @@
 								<div class="portfolio-item coding">
 									<figure class="portfolio-single">
 										<figcaption>
-											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper<i class="icon-link-ext"></i>
-											</a></h3>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
 											<em class="portfolio-category">Coding</em>
 										</figcaption>
 										<div class="portfolio-img">
-										<p>Пока пусто.. <br>но ненадолго.</p>										
-										<img src="" alt="">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="" alt="">
 										</div>
 									</figure>
 									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
@@ -128,12 +122,17 @@
 								<div class="portfolio-item graphic">
 									<figure class="portfolio-single">
 										<figcaption>
-											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper<i class="icon-link-ext"></i></a></h3>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
 											<em class="portfolio-category">Graphic design</em>
 										</figcaption>
 										<div class="portfolio-img">
-										<p>Пока пусто.. <br>но ненадолго.</p>										
-										<img src="" alt="">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="" alt="">
 										</div>
 									</figure>
 									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
@@ -141,127 +140,174 @@
 								<div class="portfolio-item graphic">
 									<figure class="portfolio-single">
 										<figcaption>
-											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper<i class="icon-link-ext"></i></a></h3>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
 											<em class="portfolio-category">Graphic design</em>
 										</figcaption>
 										<div class="portfolio-img">
-										<p>Пока пусто.. <br>но ненадолго.</p>										
-										<img src="" alt="">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="" alt="">
 										</div>
 									</figure>
 									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
 								</div>
-								<div class="portfolio-item">
+								<div class="portfolio-item graphic">
 									<figure class="portfolio-single">
 										<figcaption>
-											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper<i class="icon-link-ext"></i></a></h3>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
 											<em class="portfolio-category">Graphic design</em>
 										</figcaption>
 										<div class="portfolio-img">
-										<p>Пока пусто.. <br>но ненадолго.</p>										
-										<img src="" alt="">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="" alt="">
 										</div>
 									</figure>
 									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
 								</div>
-								<div class="portfolio-item">
+								<div class="portfolio-item graphic">
 									<figure class="portfolio-single">
 										<figcaption>
-											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper<i class="icon-link-ext"></i></a></h3>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
 											<em class="portfolio-category">Graphic design</em>
 										</figcaption>
 										<div class="portfolio-img">
-										<p>Пока пусто.. <br>но ненадолго.</p>										
-										<img src="" alt="">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="" alt="">
 										</div>
 									</figure>
 									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
 								</div>
-								<div class="portfolio-item">
+								<div class="portfolio-item graphic">
 									<figure class="portfolio-single">
 										<figcaption>
-											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper<i class="icon-link-ext"></i></a></h3>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
 											<em class="portfolio-category">Graphic design</em>
 										</figcaption>
 										<div class="portfolio-img">
-										<p>Пока пусто.. <br>но ненадолго.</p>										
-										<img src="" alt="">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="" alt="">
 										</div>
 									</figure>
 									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
 								</div>
-								<div class="portfolio-item">
+								<div class="portfolio-item graphic">
 									<figure class="portfolio-single">
 										<figcaption>
-											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper<i class="icon-link-ext"></i></a></h3>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
 											<em class="portfolio-category">Graphic design</em>
 										</figcaption>
 										<div class="portfolio-img">
-										<p>Пока пусто.. <br>но ненадолго.</p>										
-										<img src="" alt="">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="" alt="">
 										</div>
 									</figure>
 									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
 								</div>
-								<div class="portfolio-item">
+								<div class="portfolio-item graphic">
 									<figure class="portfolio-single">
 										<figcaption>
-											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper<i class="icon-link-ext"></i></a></h3>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
 											<em class="portfolio-category">Graphic design</em>
 										</figcaption>
 										<div class="portfolio-img">
-										<p>Пока пусто.. <br>но ненадолго.</p>										
-										<img src="" alt="">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="" alt="">
 										</div>
 									</figure>
 									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
 								</div>
-								<div class="portfolio-item">
+								<div class="portfolio-item graphic">
 									<figure class="portfolio-single">
 										<figcaption>
-											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper<i class="icon-link-ext"></i></a></h3>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
 											<em class="portfolio-category">Graphic design</em>
 										</figcaption>
 										<div class="portfolio-img">
-										<p>Пока пусто.. <br>но ненадолго.</p>										
-										<img src="" alt="">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="" alt="">
 										</div>
 									</figure>
 									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
 								</div>
-								<div class="portfolio-item">
+								<div class="portfolio-item graphic">
 									<figure class="portfolio-single">
 										<figcaption>
-											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper<i class="icon-link-ext"></i></a></h3>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
 											<em class="portfolio-category">Graphic design</em>
 										</figcaption>
 										<div class="portfolio-img">
-										<p>Пока пусто.. <br>но ненадолго.</p>										
-										<img src="" alt="">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="" alt="">
 										</div>
 									</figure>
 									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
 								</div>
-								<div class="portfolio-item">
+								<div class="portfolio-item graphic">
 									<figure class="portfolio-single">
 										<figcaption>
-											<h3 class="portfolio-title"><a href="" target="_blank">Etiam ullamcorper<i class="icon-link-ext"></i></a></h3>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
 											<em class="portfolio-category">Graphic design</em>
 										</figcaption>
 										<div class="portfolio-img">
-										<p>Пока пусто.. <br>но ненадолго.</p>										
-										<img src="" alt="">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="" alt="">
 										</div>
 									</figure>
 									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
-								</div>								
+								</div>							
+							</div> <!-- /portfolio-container -->
 
-							</div>
-						</main>
-					</div>
+						</main> <!-- /portfolio-content -->
+					</div> <!-- /row -->
 
 					<div class="row">
 						<div class="portfolio-container text-center">
+
+							<!-- Pagination -->
 							<ul class="pagination">
 								<li class="pagination-item disabled">
 									<a href="#" class="pagination-link" aria-label="First">
@@ -273,13 +319,9 @@
 										<span aria-hidden="true">&lsaquo;</span>
 									</a>
 								</li>
-
 								<li class="pagination-item active"><a href="#" class="pagination-link">1 <span class="sr-only">(current)</span></a></li>
-								<li class="pagination-item "><a href="#" class="pagination-link">2</a></li>
-								<li class="pagination-item "><a href="#" class="pagination-link">3</a></li>
-								<li class="pagination-item disabled"><a href="#" class="pagination-link">4</a></li>
-								<li class="pagination-item disabled"><a href="#" class="pagination-link">5</a></li>
-
+								<li class="pagination-item disabled"><a href="#" class="pagination-link">2</a></li>
+								<li class="pagination-item disabled"><a href="#" class="pagination-link">3</a></li>
 								<li class="pagination-item">
 									<a href="#" class="pagination-link" aria-label="Next">
 										<span aria-hidden="true">&rsaquo;</span>
@@ -290,17 +332,20 @@
 										<span aria-hidden="true">&raquo;</span>
 									</a>
 								</li>
-							</ul>
-						</div>								
-					</div>
+							</ul> <!-- /pagination -->
 
-				</div>
-			</div>
+						</div> <!-- /portfolio-container -->								
+					</div> <!-- /row -->
 
+				</div> <!-- /container -->
+			</div> <!-- /content -->
+
+			<!-- Footer -->
 			<footer class="footer">
 				<div class="container">
 
 					<ul class="footer-list">
+
 						<li class="footer-item">
 							<strong class="footer-title">Find Something</strong>
 							<p class="footer-text">Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.</p>
@@ -338,25 +383,21 @@
 								<li><a href="#" class="footer-cat-link">Lorem ipsum</a><span>(1)</span></li>
 								<li><a href="#" class="footer-cat-link">Etiam ullamcorper</a><span>(3)</span></li>
 							</ul>
-						</li>						
-					</ul>
+						</li>	
 
+					</ul> <!-- /footer-list -->
 
 					<div class="row">
 						<div class="copyright">Alex Liar 2016</div>
 					</div>
-					
 
+				</div> <!-- /container -->
+			</footer> <!-- /footer -->
 
+		</div> <!-- /wrapper -->
 
-				</div>
-			</footer>
+		<script src='dist/ext/js/jquery-1.12.0.min.js'></script>
+		<script src='dist/scripts/build.min.js' defer></script>
 
-		</div>
-
-		<script type="text/javascript" src='dist/ext/js/jquery-3.1.1.min.js'></script>
-		<script type="text/javascript" src='dist/ext/js/jquery.magnific-popup.min.js' defer></script>
-		<script type="text/javascript" src='dist/ext/js/isotope.pkgd.min.js' defer></script>
-		<script type="text/javascript" src='dist/scripts/build.min.js' defer></script>
 	</body>
 	</html>

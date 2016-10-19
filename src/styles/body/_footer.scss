@@ -13,6 +13,9 @@
 	@extend %col-sm-4;
 	@extend %col-xs-12;
 	margin-bottom: 2rem;
+	@include fix-ie {
+		margin-bottom: 28px;
+	}
 
 	@include respond($sm) {
 		padding-left: 2%;
@@ -130,14 +133,25 @@
 		border: none;
 		outline: none;
 		vertical-align: middle;
+		border-radius: 1px;
 
 		height: 31px;		
-		padding: 7px 12px;
-		background-color: rgba(62, 60, 61, 0.135);
-		@include box-shadow(0.5px 0.9px 0 rgba(255, 255, 255, 0.135), inset 0.5px 0.9px 1px rgba(0, 0, 0, 0.495));
+		padding: 5px 12px;
+		background-color: rgba(62, 60, 61, 0.01);
+		@include fix-ie {
+			background-color: $search-bg;		
+			border-top: 1px solid #8E8D8E;
+			border-left: 1px solid #8E8D8E;
+			border-right: 1px solid #C2C1C0;
+			border-bottom: 1px solid #C2C1C0;
+		}
+		@include box-shadow(.5px .9px 0 rgba(255,255,255,.135),0 0 5px rgba(0,0,0,.19), inset .5px .5px 4px rgba(255,255,255, 0.5));
 		@include input-placeholder {
 			color: $active-color;
 			font-style: italic;
+		}
+		&:hover, &:focus, &:active {
+			@include box-shadow ( .5px .9px 0 rgba(255,255,255,.135),0 0 5px rgba(0,0,0,.4),inset .9px .9px 1px rgba(255,255,255,.5));
 		}
 	}
 	.search-btn {
@@ -145,14 +159,26 @@
 		margin-left: 5%;
 		border: none;
 		outline: none;
+		border-radius: 1px;
 
 		height: 31px;		
-		background-color: rgba(62, 60, 61, 0.135);
-		@include box-shadow(0.5px 0.9px 0 rgba(255, 255, 255, 0.135), inset 0.5px 0.9px 1px rgba(0, 0, 0, 0.495));
+		background-color: rgba(62, 60, 61, 0.01);
+		@include fix-ie {
+			background-color: $search-bg;		
+			border-top: 1px solid #8E8D8E;
+			border-left: 1px solid #8E8D8E;
+			border-right: 1px solid #C2C1C0;
+			border-bottom: 1px solid #C2C1C0;	
+		}
+		@include box-shadow(.5px .9px 0 rgba(255,255,255,.135),0 0 5px rgba(0,0,0,.3),inset .9px .9px 1px rgba(255,255,255, .5));
 		text-transform: uppercase;
 		color: $active-color;
-		padding: 7px 0;
+		padding: 5px 0;
 		vertical-align: middle;
+		&:hover, &:focus, &:active {
+			background-color: rgba(62,60,61,0.03);
+			@include box-shadow ( .5px .9px 0 rgba(255,255,255,.135),0 0 5px rgba(0,0,0,.4),inset .9px .9px 1px rgba(255,255,255,.5));
+		}
 	}
 }//end search
 

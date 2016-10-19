@@ -10,22 +10,20 @@
 	}
 }
 .content-title {
-	font-size: 33px;
 	line-height: 1.2;
 	color: #7e7e7e;
+	font-size: 1.4em;
 	span {
 		color: #d42819;
 	}
-	@include fix-all {
-		@include respond-and ($sm, $md - 1){
-			font-size: 2em;
-		}
-		@include respond-and ($xs + 1, $sm - 1){
-			font-size: 1.8em;
-		}
-		@include respond ($xs, max){
-			font-size: 1.4em;
-		}
+	@include respond ($xs){
+		font-size: 1.8em;
+	}
+	@include respond ($sm){
+		font-size: 2em;
+	}
+	@include respond ($md){
+		font-size: 2.36em;
 	}
 }
 
@@ -95,11 +93,11 @@
 	background-color: transparent;
 	vertical-align: middle;
 	position: relative;
-	@include respond ($ss + 1) {
+	@include respond ($xs) {
 		height: 320px;
 		line-height: 320px;
 	}	
-	@include respond ($sm + 1) {
+	@include respond ($sm) {
 		height: 173px;
 		line-height: 173px;
 	}	
@@ -196,8 +194,10 @@
   	&:focus {
   		z-index: 2;
   		color: $pagination-hover-color;
-  		background-color: $pagination-hover-bg;
-  		border-color: $pagination-hover-border;
+  		background-color: $pagination-hover-bg;  		
+  		border-color: $pagination-hover-border;	
+  		
+  		
   	}
   }
 
@@ -232,14 +232,7 @@
 	@include border-radius($border-radius-base);
 	margin: 0 4px;
 	cursor: pointer;
-	.pagination-item:nth-child(-n + 2):not(.disabled) &,
-	.pagination-item:nth-last-child(-n + 2):not(.disabled) & {
-		@include background-image(linear-gradient(to top, #e8e8e8 0%, #fbf9f9 100%));
-		@include box-shadow(rgba(255, 255, 255, 0.7) 0 0 0 1px inset);
-		&:hover {
-			background: $pagination-hover-bg;
-		}
-	}
+	@include box-shadow ( .5px .9px 0 rgba(255,255,255,.135),0 0 5px rgba(0,0,0,.4),inset .9px .9px 1px rgba(255,255,255,.5));
 }
 
 

@@ -1,5 +1,6 @@
-$font-family-base: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-base: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
 $font-size-base: 14px;
+$font-size-grid: 14px;
 $line-height-base: 1.428571429;
 $font-weight: 400;
 $color: #585857;
@@ -37,19 +38,21 @@ $nav-social-color: #cfcecd;
 $active-color: #d42819;
 
 //Pagination
-$pagination-color: #b5b3b3;
-$pagination-bg: transparent;
+$pagination-color: #767575;
+$pagination-bg: #fff;
 $pagination-border: #bab7b7;
 $border-radius-base: 2px;
 $pagination-hover-color: #b5b3b3;
-$pagination-hover-bg: #fff;
+$pagination-hover-bg: rgb(62,60,61);
 $pagination-hover-border: $pagination-border;
 $pagination-active-color: $active-color;
-$pagination-active-bg: #fff;
+$pagination-active-bg: rgb(62,60,61);
 $pagination-active-border: $pagination-border;
-$pagination-disabled-color: $pagination-color;
+$pagination-disabled-color: #b5b3b3;
 $pagination-disabled-bg: transparent;
 $pagination-disabled-border: $pagination-border;
+
+$search-bg: #f0efef;
 
 
 

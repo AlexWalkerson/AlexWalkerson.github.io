@@ -13,20 +13,14 @@
 		margin-top: 106px;
 	}
 
-
-
-
 }
 .navbar-header {
 	@include clearfix;
 	position: relative;
-	float: left;
-	min-height: 74px;
-	@include fix-all {
-		@include respond ($sm - 1, max){
-			float: none;
-			min-height: auto;
-		}
+
+	@media (min-width: $sm) {
+		float: left;
+		min-height: 74px;
 	}
 }
 
@@ -40,29 +34,23 @@
 }
 
 .navbar-collapse {
-	width: auto;
+	-webkit-overflow-scrolling: touch;
+	@include clearfix;
 
-	&.collapse {
-		height: auto ;
-		display: block;
+	&.collapse{
+		display: none;
+		&.in {
+			display: block;
+			overflow-y: auto;
+		}
 	}
 
-	&.in {
-		overflow-y: visible;
-		display: block !important;
-	}
-
-	@include fix-all {
-		@include respond ($sm - 1, max){
-			border-top: 1px solid transparent;
-			box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-			-webkit-overflow-scrolling: touch;
-			&.collapse {
-				display: none;
-			}
-			&.in {
-				overflow-y: auto;
-			}
+	@media (min-width: $sm){
+		width: auto;
+		&.collapse {
+			display: block !important;
+			height: auto !important;
+			overflow: visible !important;
 		}
 	}
 
@@ -91,82 +79,87 @@
 }
 
 .navbar-toggle {
-	display: none;
-	@include fix-all {
-		@include respond ($sm - 1, max){
-			display: block !important;
-			position: relative;
-			float: right;
-			margin-right: $navbar-padding-horizontal;
-			padding: 9px 10px;
-			@include navbar-vertical-align(34px);
-			background-color: transparent;
-			background-image: none; 
-			border: 1px solid transparent;
-			border-radius: $border-radius-base;
-
-			&:focus {
-				outline: 0;
-			}
-
-			.icon-bar {
-				display: block;
-				width: 22px;
-				height: 2px;
-				border-radius: 1px;
-				background-color: #888;
-				+ .icon-bar {
-					margin-top: 4px;
-				}
-			}
+	position: relative;
+	float: right;
+	margin-right: $navbar-padding-horizontal;
+	padding: 9px 10px;
+	@include navbar-vertical-align(34px);
+	background-color: transparent;
+	background-image: none; 
+	border: 1px solid transparent;
+	border-radius: $border-radius-base;
+	&:focus {
+		outline: 0;
+	}
+	.icon-bar {
+		display: block;
+		width: 22px;
+		height: 2px;
+		border-radius: 1px;
+		background-color: #888;
+		+ .icon-bar {
+			margin-top: 4px;
 		}
 	}
+
+	@media (min-width: $sm) {
+		display: none;
+	}	
 } // end navbar-toggle
 
 .nav {
 	margin: 0 17%;
 	.nav-link {
-		margin: 0 (18/14)+em;
-		padding: 10px 0;
-		text-transform: uppercase;
+		display: block;
+		padding: 0;
+		line-height: 2;
+		border-top: 1px solid $nav-social-color;
+		background-color: $nav-link-bg;
 		color: $nav-link-color;
-		font-size: (18/14)+em;
+		text-transform: uppercase;
+		font-size: 1em;
+		margin: 0 1em;
 		font-weight: 300;
-		@include single-transition(border-bottom, 500ms, ease, 200ms);
+		@include single-transition(background-color, 0.2s, ease);
 		&:hover, &.active{
-			border-bottom: #ff0000 solid 1px;
-		}		
-	}
-	@include fix-all {
-		@include respond($md - 1, max){
-			.nav-link {
-				font-size: 1em;
-				margin: 0 1em;
-			}
+			text-decoration: underline;			
+			background-color: rgba($nav-social-color, 0.1);
 		}
-		@include respond($sm - 1, max){			
-			> .nav-link {
-				display: block;
-				padding: 0;
-				line-height: 2;
-				border-top: 1px solid $nav-social-color;
-				background-color: $nav-link-bg;
-				color: $nav-link-color;
-				@include single-transition(background-color, 0.2s, ease);
 
-				&:hover, &.active{
-					border-bottom: 0;
-					text-decoration: underline;
-					
-					background-color: rgba($nav-social-color, 0.1);
-				}		
-			}
+		@include respond($sm){
+			display: inline;
+			padding: 10px 0;
+
+			line-height: inherit;
+			border-top: none;
+			background-color: transparent;
+			@include single-transition(border-bottom, 500ms, ease, 200ms);
+			&:hover, &.active{
+				border-bottom: #ff0000 solid 1px;
+				text-decoration: none;
+				background-color: transparent;
+			}	
 		}
-	}	
-}//end nav
+
+		@include respond($md){
+			font-size: (18/14)+em;
+			margin: 0 (18/14)+em;
+		}	
+	} // end nav-link
+}// end nav
 
 .social {
-	float: right;
+	float: none;
+	padding-top: 36px;
+	line-height: 3;	
+	@include respond($xs) {
+		padding-top: 0;
+	}
+	@include respond($sm){
+		float: right;
+		padding-top: 0;	
+		line-height: inherit;		
+	}
 	a {			
 		color: $nav-link-color;
 		&::before {
@@ -181,20 +174,13 @@
 		}
 		&:hover::before{
 			background-color: $nav-link-bg;
-			color: $nav-social-color;
-			
+			color: $nav-social-color;			
 		}			
 		span {
 			display: inline-block;
 			text-indent: -9999px;
 		}
-	}
-	@include fix-all {
-		@include respond($sm - 1, max){
-			float: none;
-			padding-top: 23px;
-		}
-	}
+	}	
 }
 
 

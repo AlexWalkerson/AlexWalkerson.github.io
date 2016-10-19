@@ -52,16 +52,6 @@
   }
 }
 
-// [converter] This is defined recursively in LESS, but Sass supports real loops
-// @mixin float-grid-columns($class, $i: 1, $list: "%col-#{$class}-#{$i}") {
-//   @for $i from (1 + 1) through $grid-columns {
-//     $list: "#{$list}, %col-#{$class}-#{$i}";
-//   }
-//   #{$list} {
-//     float: left;
-//   }
-// }
-
 @mixin calc-grid-column($index, $class, $type) {
   @if ($type == width) and ($index > 0) {
     %col-#{$class}-#{$index} {
@@ -104,22 +94,12 @@
 
 // Create grid for specific class
 @mixin make-grid($class) {
-  // @include float-grid-columns($class);
   @include loop-grid-columns($grid-columns, $class, width);
   @include loop-grid-columns($grid-columns, $class, pull);
   @include loop-grid-columns($grid-columns, $class, push);
   @include loop-grid-columns($grid-columns, $class, offset);
 }
-// @mixin clearfix() {
-//   &:before,
-//   &:after {
-//     content: " "; // 1
-//     display: table; // 2
-//   }
-//   &:after {
-//     clear: both;
-//   }
-// }
+
 @mixin container-fixed($gutter: $grid-gutter-width) {
   margin-right: auto;
   margin-left: auto;
@@ -147,36 +127,17 @@
 
 @include make-grid(xs);
 
-@include respond($screen-sm-min){
+@media (min-width: $screen-sm-min) {
   .container {width: $container-sm;}
   @include make-grid(sm);
 }
-@include respond($screen-md-min){
+@media (min-width: $screen-md-min) {
   .container {width: $container-md;}
   @include make-grid(md);
 }
-@include respond($screen-lg-min){
+@media (min-width: $screen-lg-min) {
   .container {width: $container-lg;}
   @include make-grid(lg);
 }
-
-
-
-
-
-// @include make-grid(xs);
-
-// @media (min-width: $screen-sm-min) {
-//   .container {width: $container-sm;}
-//   @include make-grid(sm);
-// }
-// @media (min-width: $screen-md-min) {
-//   .container {width: $container-md;}
-//   @include make-grid(md);
-// }
-// @media (min-width: $screen-lg-min) {
-//   .container {width: $container-lg;}
-//   @include make-grid(lg);
-// }
 
 
