@@ -1,0 +1,54 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+.separator {
+  &:after {
+    content: '';
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+}
+.visible-lg {
+ @extend %visible-lg;
+}
+.visible-md {
+  @extend %visible-md;
+}
+.visible-xs {
+  @extend %visible-xs;
+}
+.hidden-xs {
+  @extend %hidden-xs;
+}
+.visible-ib-xs{
+   @extend %visible-ib-xs;
+}
+.right {
+  float: right;
+}
+.col-sm-7 {
+  @extend %col-sm-7;
+}
+.col-sm-2 {
+  @extend %col-sm-2;
+}
+
+%va-c {
+  display: table-cell;
+  vertical-align: middle;
+}

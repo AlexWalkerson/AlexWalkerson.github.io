@@ -1,0 +1,19 @@
+.consultation {
+	padding-top: 40px;
+	padding-bottom: 57px;
+	
+	background-color: #ebebeb;
+	text-align: center;
+	@include respond ($sm){
+		padding-top: (200px/ $font-size-base)+em;
+		padding-bottom: (70px/ $font-size-base)+em;
+	}
+}
+.consultation-title	{
+	font-size: 1em;
+	font-weight: 500;
+	color: $header-top-color;
+	padding-bottom: (50px/ $font-size-base)+em;
+}
+
+

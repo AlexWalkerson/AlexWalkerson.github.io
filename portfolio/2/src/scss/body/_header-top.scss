@@ -1,0 +1,82 @@
+%title {
+	font-size: $header-top-fz;
+	font-weight: 500;
+}
+
+
+.headet-top {
+	@extend %hidden-xs;
+}
+.logo {
+	padding-left: (15px/$font-size-base)+em;
+	float: left;
+	width: 44%;
+	@include respond($md - 1,max){
+		width: 39%;
+		padding-left:0;
+	}
+	img {
+		float: left;
+		margin-right: (6px/$font-size-base)+em;
+	}
+	.logo-title {
+		@extend %title;
+		@extend %va-c;
+		height: 120px;
+		text-transform: uppercase;
+		color: $header-top-color;
+
+	}
+}
+
+
+.headet-contact {
+	padding-right: (15px/$font-size-base)+em;
+	float: right;
+	@include respond($md - 1,max){
+		padding-right: 0.2em;
+	}
+}
+.headet-contact-container {
+		@extend %va-c;
+		height: 120px;
+}
+
+.contact-info {	
+	color: $header-top-contact-color;	
+	display: inline-block;
+	line-height: 0;
+	.contact-head, .contact-bott {
+		display: inline-block;
+	}
+	.contact-head {
+		@extend %title;
+		width: 100%;
+		line-height: 1;
+	}
+	.contact-bott {	
+		font-size: (17px/$font-size-base)+em;
+	}
+	.icon-down-open:before {
+		box-sizing: content-box;
+		font-size: (15px/$font-size-base)+em;
+		border: 1px solid $header-top-contact-color;
+		@include border-radius(2px);
+		margin-right: 0;
+	}
+}
+.contact-icon {	
+	color: $header-top-color;
+	&:before {
+		font-size: (48px/$font-size-base)+em;
+	}
+	&.icon-phone {
+		margin-right: -(25px/$font-size-base)+em;
+	}
+	&.icon-location {
+		margin-right: -(16px/$font-size-base)+em;
+	}
+}
+
+
+

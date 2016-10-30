@@ -1,0 +1,113 @@
+.slid-container {
+	position: relative;
+	color: #a5a5a5;
+	text-align: center;
+}
+
+.slid-bar {
+	width: 87%;
+	margin: 0 auto;
+	overflow: hidden;	
+}
+.slid-wrapper {
+	width: 600%;
+	position: relative;
+	// transition: left 500ms linear;
+
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.slide {
+	float: left;
+	position: relative;
+	padding: 0 (43px/ $font-size-base)+em;
+	width: percentage(1/6);
+}
+.arrow {
+	height: 100%;
+	font-size: (46px/ $font-size-base)+em;
+	width: 12%;
+	position: absolute;
+	top: 0; bottom: 0;
+	z-index: 10;
+
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+	i{
+		&:before{
+			margin: 0;
+			width: auto;
+		}
+	}
+}
+.next,.prev{
+	&:hover{
+		background-color: #f1f8fB;
+	}
+}
+.disabled {
+	display: none;
+	z-index: -100;
+}
+.next,.pseudonext {
+	right: 0;
+}
+.prev,.pseudoprev {
+	left: 0;
+}
+.pseudoprev,.pseudonext {
+	display: none;
+	color: #e5e5e5;
+	cursor: not-allowed;
+	z-index: 20;
+}
+.next.disabled + .pseudonext {
+	display: block;
+}
+.prev.disabled + .pseudoprev {
+	display: block;
+}
+
+.slide-link {
+	display: block;
+	margin-bottom: (30px/ $font-size-base)+em;	
+	img {
+		width: 100%;
+	}
+}
+.officer-name {
+	text-align: center;	
+	font-size: (25px/ $font-size-base)+em;	
+	line-height: (33/25)+em;
+	font-weight: 500;
+	margin-bottom: (18/25)+em;
+}
+.officer-desc {
+	text-align: center;
+	font-size: 13px;
+	line-height: 20px;
+	font-style: italic;
+}
+
+@include respond($xs) {
+	.slide {
+		width: percentage((1/6/2));
+	}
+	.arrow {
+		width: 7%;
+	}
+}
+@include respond($sm) {
+	.slide {
+		width: percentage((1/6)/3);
+	}
+}
+@include respond($md){
+	.officer-desc {
+		font-size: (21px/ $font-size-base)+em;		
+		line-height: (33/21)+em;
+	}
+}

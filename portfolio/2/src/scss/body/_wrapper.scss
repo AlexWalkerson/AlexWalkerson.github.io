@@ -1,0 +1,73 @@
+* {
+  @include box-sizing(border-box);
+}
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+html {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $body-bg;
+  font-weight: $font-weight;
+  overflow-x: hidden;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+
+}
+html, body,*:before,*:after{
+  font-size: $font-size-base;
+}
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+// Links
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:focus {
+    @include tab-focus;
+  }
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: $font-weight;
+  margin: 0;
+  font-size: 1em;
+  line-height: $line-height-base;
+}
+
+.container-fluid {
+  max-width: $container-lg;
+  width: 100%;
+}
+
+body,*:before,*:after {
+  @media  (max-width: $lg - 1) {   font-size: 90%; }
+  @media  (max-width: $md - 1) {   font-size: 80%; }
+  @media  (max-width: $sm - 1) {   font-size: 65%; }
+  @media  (max-width: $xs - 1) {   font-size: 60%; }
+}
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+

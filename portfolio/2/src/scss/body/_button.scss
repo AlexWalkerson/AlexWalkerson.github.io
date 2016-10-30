@@ -1,0 +1,81 @@
+.btn {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	white-space: nowrap;
+	@include single-transition(all, 0.2s, ease-in-out);
+	&:active{
+		outline: 0;
+		background-image: none;
+	}
+}
+
+.btn-xs {
+	@include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-xs, $line-height-xs, $btn-border-radius-small);
+}
+.btn-sm {
+	@include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+	font-weight: 500;
+}
+.btn-lg {
+	@include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
+	font-weight: 500;
+	@include respond($sm - 1, max){
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}
+
+.btn-blue {
+	background-color: $btn-blue-bg;
+	border: $btn-blue-border;
+	color: $btn-blue-color;
+	&:hover, &:focus, &:active {
+		background-color: $btn-blue-hover-bg;
+		border-color: $btn-blue-hover-border;
+		color: $btn-blue-hover-color;
+	}
+}
+.btn-clear {
+	background-color: $btn-clear-bg;
+	border: $btn-clear-border;
+	color: $btn-clear-color;
+	&:hover, &:focus, &:active {
+		background-color: $btn-clear-hover-bg;
+		border-color: $btn-clear-hover-border;
+		color: $btn-clear-hover-color;
+	}
+}
+.btn-white {
+	background-color: $btn-white-bg;
+	border: $btn-white-border;
+	color: $btn-white-color;
+	&:hover, &:focus, &:active {
+		background-color: $btn-white-hover-bg;
+		border-color: $btn-white-hover-border;
+		color: $btn-white-hover-color;
+	}
+}
+.btn-news {
+	background-color: $btn-news-bg;
+	border: $btn-news-border;
+	color: $btn-news-color;
+	&:hover, &:focus, &:active {
+		background-color: $btn-news-hover-bg;
+		border-color: $btn-news-hover-border;
+		color: $btn-news-hover-color;
+	}
+}
+.btn-form {
+	background-color: $btn-form-bg;
+	border: $btn-form-border;
+	color: $btn-form-color;
+	&:hover, &:focus, &:active {
+		background-color: $btn-form-hover-bg;
+		border-color: $btn-form-hover-border;
+		color: $btn-form-hover-color;
+	}
+}

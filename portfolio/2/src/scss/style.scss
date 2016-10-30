@@ -1,0 +1,36 @@
+$fix-ie: false !default; //true if IE8-
+@import "compass/css3";
+
+//Vars
+@import "bootstrap/variables";
+@import 'base/vars.scss';
+
+//TB
+@import "bootstrap/mixins";
+@import "bootstrap/normalize";
+
+@import 'mixins/responsive.scss';
+@import "mixins/grid.scss";
+
+@import 'base/font.scss';
+@import 'base/helpClasses.scss';
+
+
+
+
+
+@import "body/wrapper.scss";
+@import "body/button.scss";
+@import "body/header-top.scss";
+@import "body/header-slider.scss";
+@import "body/header-produce.scss";
+@import "body/navbar.scss";
+@import "body/consultation.scss";
+@import "body/form.scss";
+@import "body/section.scss";
+@import "body/pictures.scss";
+@import "body/footer.scss";
+@import "body/carusel.scss";
+@import "body/dropdown.scss";
+@import "body/popup.scss";
+

@@ -1,0 +1,50 @@
+.produce {
+	@extend %hidden-xs;
+	position: absolute;
+	bottom: -(124px/ $font-size-base)+em;;
+	left: 50%;
+	margin-left: -400px;
+	width: 800px;
+	background-color: rgba(#70c7ea, 0.86);
+	@include fix-ie{
+		background-color: #70c7ea;
+		@include opacity(0.8);
+	}
+	th:nth-child(2n-1),td:nth-child(2n-1){
+		background-color: rgba(#46b6e3, 0.86);
+	}
+	@include fix-ie{ 
+		th:first-child, th:first-child + th + th,
+		td:first-child, td:first-child + td + td {
+			background-color: #46b6e3;
+			@include opacity(0.8);
+		}
+	}
+	th{
+		font-size: (42px/ $font-size-base)+em;
+		line-height: (76px/ 42px)+em;
+		vertical-align: top;
+		font-weight: 700;
+		height: (124px/ 42px)+em;
+		width: 200px;
+	}	
+	td {
+		font-size: (17px/ $font-size-base)+em;
+		line-height: (25px/ 17px)+em;
+		font-weight: 500;
+		height: (124px/ 17px)+em;
+		width: 200px;
+		padding: 0 4px;
+		position: relative;
+		&:after {
+			width: 104px;
+			background-color: #fff;
+			margin-left: -52px;
+			bottom: 21%;
+			@include fix-ie {
+				bottom: 1em;
+			}
+		}
+	}	
+
+}

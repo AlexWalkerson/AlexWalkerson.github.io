@@ -1146,10 +1146,7 @@ img.mfp-img {
 html, body {
   height: 100%;
   font-weight: 400;
-  width: 100%;
-  padding: 0;
-  margin-left: 0;
-  margin-right: 0; }
+  width: 100%; }
 
 html {
   font-size: 14px; }

@@ -1,0 +1,47 @@
+.footer {
+	line-height: 74px;
+	vertical-align: middle;
+	.row {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+	}	
+}
+.footer-cell {
+	@extend %col-xs-12;	
+	padding: 0;
+	line-height: 0;
+}
+.social {
+	i {
+		display: inline-block;
+		width: 23px;
+		line-height: 23px;
+		// padding-bottom: 2px;
+		font-size: 0;
+		background-color: #aaa;
+		color: #fff;
+		@include transition(background-color 0.2s ease);
+		&:hover {
+			background-color: #47afdf;
+		}
+		&:before {
+			font-size: 18px;
+			margin: 0;
+			vertical-align: middle;
+		}
+	}
+}
+.copiright {
+	font-size: 10px;
+	font-style: italic;
+	color: #888;
+	line-height: 23px;
+}
+
+
+@include respond($sm){
+	.copiright {
+		font-size: (21px/ $font-size-base)+em;
+	}
+}
