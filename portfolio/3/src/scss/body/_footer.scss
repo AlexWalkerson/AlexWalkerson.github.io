@@ -1,0 +1,12 @@
+.footer {
+	height: 139px;
+	background-color: #e8e8e8;
+}
+.footer-nav__link {
+	margin-left: -0.25em;
+	margin-right: 37px;
+	line-height: em(26);
+	&:last-child {
+		margin-right: 0;
+	}
+}

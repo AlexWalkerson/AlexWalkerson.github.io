@@ -1,0 +1,28 @@
+.section {
+	padding: 57px 0;
+	@include clearfix;
+}
+.sec-title{
+font-size: em(29);
+font-weight: bold;	
+letter-spacing: -0.05em;
+color: #222;
+margin: 0 0 20px;
+}
+.sec-subtitle {
+	font-size: em(23);
+	font-weight: bold;
+	letter-spacing: 0.03em;
+	color: #222;
+	margin: 0 0 21px;	
+}
+.sec-text {
+	font-size: em(16);
+	line-height: em(26,16);
+	letter-spacing: 0.007em;
+	margin: 0;
+}
+.text-container {
+	width: 1030px;
+	margin: 0 auto;
+}

@@ -1,0 +1,34 @@
+$fix-ie: false !default; //true if IE8-
+@import "compass/css3";
+
+//Vars
+@import "bootstrap/variables";
+@import 'base/vars.scss';
+
+//TB
+@import "bootstrap/mixins";
+@import "bootstrap/normalize";
+
+@import "mixins/mixins";
+
+@import 'base/font.scss';
+@import 'base/helpClasses.scss';
+
+
+
+@import 'body/wrapper.scss';
+@import 'body/header.scss';
+@import 'body/section.scss';
+@import 'body/iphon.scss';
+@import 'body/movie.scss';
+@import 'body/pic.scss';
+@import 'body/pricing.scss';
+@import 'body/subscribe.scss';
+@import 'body/btn.scss';
+@import 'body/social.scss';
+@import 'body/footer.scss';
+// @import 'body/';
+
+
+
+

@@ -1,0 +1,53 @@
+.social-bar {
+	margin: 18px 0 4px;
+}
+.social-icon {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	background-color: #c5c5c5;
+	border-radius: 50%;
+	margin-left: -0.25em;
+	margin-right: 10px;
+	line-height: 34px;
+	@include transition(opacity .2s ease-in-out);
+	&:last-child {
+		margin-right: 0;
+	}	
+	@include fix-ie {
+		&:first-child + a + a + a + a + a {
+			margin-right: 0;
+		}
+	}
+	&:before {
+		color: #fff;
+		font-size: 20px;			
+		vertical-align: top;	
+	}
+	&:hover {
+		background-color: #e74c3c;
+	}
+}
+.icon-twitter:before {
+	font-size: 21px;
+	line-height: 34px;
+}
+.icon-facebook:before {
+	font-size: 20px;
+	line-height: 34px;
+}
+.icon-pinterest-circled:before {
+	font-size: 23px;
+	line-height: 34px;
+}
+.icon-gplus:before {
+	font-size: 19px;
+	line-height: 37px;
+}
+.icon-linkedin:before {
+	font-size: 17px;
+	line-height: 33px;
+} 
+.icon-youtube:before {
+	line-height: 32px;
+}   

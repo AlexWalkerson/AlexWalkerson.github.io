@@ -1,0 +1,44 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  @include single-transition(all, 0.2s, ease-in-out);
+  &:active{
+    outline: 0;
+    background-image: none;
+  }
+}
+.btn-pricing {
+  line-height: 40px;  
+  font-size: em(15);  
+  letter-spacing: 0.045em;  
+  padding: 0 32px;  
+
+  background-color: #514d4d;
+  background-color: rgba(#fff, .15);
+  color: #fff;
+  &:hover{
+    background-color: rgba(#fff,.3);
+  }
+}
+.btn-form {
+  font-size: em(18);
+  letter-spacing: 0.03em;
+  background-color: #e74c3c;
+  color: #fff;
+  font-weight: bold;
+  width: 149px;
+  height: 73px;
+  line-height: 73px;
+  letter-spacing: -0.06em;
+  &:hover {
+    @include opacity(.7);
+  }
+}

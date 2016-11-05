@@ -1,0 +1,11 @@
+@mixin blockVA(){
+	height: 100%;
+  width: 100%;
+  &:before {
+    content: '\200B';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; width: .1px;
+    margin-left: -0.25em; 
+  }
+}

@@ -1,0 +1,117 @@
+.iphone-sec {
+	height: 497px;
+}
+.iphone-container {
+	width: 1067px;;
+	padding-left: 5px;
+	padding-right: 5px;
+	position: relative;
+	@include clearfix;
+}
+.iphone-box {	
+	width: em(300);
+	margin-bottom: em(49px);
+}
+
+.iphone {
+	position: absolute;
+	bottom: -116px; left: 50%;
+	margin-left: -232px;
+	z-index: 10;
+	img {
+		width: 100%;
+	}
+}
+
+.dot {	
+	@include fix-ie {
+		display: none;
+	}
+	width: 16px;
+	height: 16px;	
+	background-color: #f4f4f4;
+	@include box-shadow(0 0 0 5px rgba(255, 255, 255, 0.15));
+	border-radius: 50%;
+	position: absolute;
+	z-index: 30;
+	@include transition(all 0.3s linear);
+	&::after{
+		@include opacity(0);
+		display: none;
+		@include transition(opacity 0.3s linear);
+		content: '';
+		position: absolute;		
+		z-index: 20;
+		border: 2px solid #222;
+	}
+}
+
+.dot-1{
+	left: 151px;
+	bottom: 285px;
+	&::after {
+    top: -92px;
+    left: -229px;
+    width: 226px;
+    height: 112px;
+		@include transform(rotateZ(-4deg));
+		border-left-width: 0;
+		border-top-width: 0;
+		border-right-width: 0;
+	}
+}
+.dot-2{
+	left: 150px;
+	bottom: 495px;
+	&::after {
+    top: -71px;
+    left: -240px;
+    width: 231px;
+    height: 112px;
+		@include transform(rotateZ(-14deg));
+		border-left-width: 0;
+		border-top-width: 0;
+		border-right-width: 0;
+	}
+}
+.dot-3{
+	right: 154px;
+	bottom: 379px;
+	&::after {
+    top: 21px;
+    left: 34px;
+    width: 106px;
+    height: 96px;
+		@include transform(skew(27deg, 6deg));
+		border-right-width: 0;
+		border-top-width: 0;
+	}
+}
+.dot-4{
+	right: 147px;
+	bottom: 591px;
+	&::after {
+    top: 34px;
+    left: 34px;
+    width: 96px;
+    height: 109px;
+		@include transform(skew(25deg, 21deg));
+		border-right-width: 0;
+		border-top-width: 0;
+	}
+
+}
+
+#radio-1:checked ~ .iphone > .dot-1,
+#radio-2:checked ~ .iphone > .dot-2,
+#radio-3:checked ~ .iphone > .dot-3,
+#radio-4:checked ~ .iphone > .dot-4 {
+	background-color: #e74c3c;
+	@include box-shadow(0 0 0 8px rgba(255, 255, 255, 0.5));
+	&:after {
+		@include fix-all {
+			display: block;
+		}
+		@include opacity(1);
+	}
+}

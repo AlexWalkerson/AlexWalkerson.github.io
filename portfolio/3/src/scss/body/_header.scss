@@ -1,0 +1,97 @@
+.header {
+	padding-top: em(107);
+	height: em(700);
+	background: {
+		image: url('../img/header_bg.jpg');
+		repeat: no-repeat;
+	}
+}
+
+.logo {
+	height: em(78);
+	margin: 0 0 em(40);
+	font-size: 1em;
+	p {
+		text-indent: -9999999px;
+		margin: 0;
+		height: 0;
+	}
+	img {
+		height: 100%;
+	}
+}
+
+.icons {
+	margin-bottom: em(54);
+	a {
+		margin-right: 15px;
+		margin-left: -0.25em;
+		&:last-child {
+			margin-right: 0;
+		}	
+		@include fix-ie {
+			&:first-child + a + a {
+				margin-right: 0;
+			}
+		}
+	}
+}
+.icon {	
+	width: 52px;
+	height: 52px;	
+	line-height: 48px;
+
+	display: inline-block;	
+	background-color: #000;
+	@include opacity(.5);
+	@include border-radius(50%);
+
+	@include transition(opacity .2s ease-in-out);
+	
+	&:hover {
+		@include opacity(1);
+	}
+	
+	&:before {
+		color: #f4f4f4;
+		font-size: 24px;	
+		vertical-align: middle;	
+	}
+}
+
+.arrow {
+	font-size: 0;
+	width: 50px;
+	height: 10px;
+	margin: 0 auto;
+	@include opacity(.4);
+	&:hover{
+		@include opacity(.8);
+	}
+	@include fix-ie {
+		height: 15px;
+		background: {
+			image: url('../img/arrow_ie.png');
+			repeat: no-repeat;
+			position: center;
+		}
+	}
+}
+@include fix-all{
+	.half-arrow {
+		display: inline-block;
+		width: 50%;
+		height: 100%;
+		background-color: #fff;
+	}
+	.half-arrow__1 {
+		@include transform(skewY(16deg));
+		border-top-left-radius: 6px;
+		border-bottom-left-radius: 3px;
+	}
+	.half-arrow__2 {
+		@include transform(skewY(-16deg));
+		border-top-right-radius: 6px;
+		border-bottom-right-radius: 3px;
+	}
+}
