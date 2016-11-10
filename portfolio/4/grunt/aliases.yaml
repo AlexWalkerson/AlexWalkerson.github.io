@@ -1,0 +1,24 @@
+default:
+  description: 'Default (production) build'
+  tasks:
+    - 'clean:all'
+    - 'concurrent:prodFirst'
+    - 'cmq'
+    - 'concurrent:prodSecond'    
+dev:
+  description: 'Development build'
+  tasks:
+    - 'clean:all'
+    - 'concurrent:devFirst'
+    - 'cmq'
+    - 'concurrent:devSecond'
+img:
+  description: 'Image tasks'
+  tasks:
+    - 'clean:img'
+    - 'imagemin'
+js:
+  description: 'JS'
+  tasks:
+    - 'concat'
+    - 'uglify'

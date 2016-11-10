@@ -1,0 +1,86 @@
+.cool-btn-group {
+	@include clearfix;
+	@include respond($sm){
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+}
+.cool-btn {
+	height: 39px;
+	width: 130px;	
+	padding: 2px;
+	border: 1px dashed #ff5c00;
+	outline: none;
+	border-radius: 9px;
+	background-color: #ff5c00;
+	@include background-clip(content-box);
+	color: #fff;
+	position: relative;
+	@include transition(all .3s);
+	@include respond($sm){
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		border-bottom: none;
+		padding-bottom: 0;
+		width: em(165px);		
+		margin: 0 10px;
+	}
+	&:hover {
+		background-color: rgba(#327dbc,.95);
+		border-color: rgba(#327dbc,.95);
+		@include fix-ie{
+			background-color: #327dbc;
+			border-color: #327dbc;
+		}
+		.cool-btn__man{
+			background-image: image-url("cool-btn/man-1.png");
+		}
+	}
+}
+.cool-btn__text{
+	margin: 0;
+	text-align: left;
+	padding-left: em(7px);
+}
+.cool-btn__icon {
+	float: left;
+	height: 100%;	
+	&:before {
+		font-size: em(24);
+		vertical-align: middle;
+		line-height: 36px;
+	}	
+}
+.cool-btn__icon_width{
+	width: em(40px);
+}
+.cool-btn__text_title {
+	font-size: em(16px);
+	font-weight: bold;
+	font-style: italic;
+	padding-top: 6px;
+}
+.cool-btn__text_up {
+	text-transform: uppercase;
+}
+.cool-btn__text_sm {
+	font-size: em(11px);
+	padding-top: 0;
+}
+
+.cool-btn__man {
+	position: absolute;
+	bottom: 0; right: 0;
+	height: 68px;
+	width: 76px;
+	@include transition(all .1s);
+	background: {
+		image: url('../svg/man-2.svg');
+		@include fix-ie {
+			image: image-url('cool-btn/man-2.png');
+		}
+		repeat: no-repeat;
+		position: 100% 100%;
+	}
+}

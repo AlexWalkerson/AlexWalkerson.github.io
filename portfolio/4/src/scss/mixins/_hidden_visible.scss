@@ -1,0 +1,24 @@
+%visible-lg,%visible-md,%visible-sm,%visible-xs,
+%visible-ib-lg,%visible-ib-md,%visible-ib-sm,%visible-ib-xs {
+  display: none !important;
+} 
+@media (min-width: $screen-lg) {
+  %visible-lg { display: block !important; }  
+  %visible-ib-lg { display: inline-block !important; }  
+  %hidden-lg  { display: none !important;  }
+}
+@media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+  %visible-md { display: block !important; }  
+  %visible-ib-md { display: inline-block !important; }  
+  %hidden-md  { display: none !important;  }
+}
+@media (min-width: $screen-sm) and (max-width: $screen-md - 1) {
+  %visible-sm { display: block !important;}  
+  %visible-ib-sm { display: inline-block !important;}  
+  %hidden-sm  { display: none !important;  }
+}
+@media (max-width: $screen-sm - 1) {
+  %visible-xs { display: block !important; }  
+  %visible-ib-xs { display: inline-block !important; }  
+  %hidden-xs  { display: none !important;  }
+}

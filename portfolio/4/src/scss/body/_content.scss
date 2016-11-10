@@ -1,0 +1,71 @@
+.content__line {
+	position: relative;
+	height: 17px;
+	background: {
+		color: #55ab00;		
+	}	
+	@include background-image( 	
+		linear-gradient(to top, rgba(#2d9400, .65) 0%, rgba(#30aa00,.65) 100%),
+		image-url('bg_cat.png'));
+	background-size: auto;
+	border-top-left-radius: 13px;
+	border-top-right-radius: 13px;
+	margin-top: 10px;
+}
+.content-wrapper {
+	
+	z-index: 10;
+	padding: em(23) em(73) em(45) em(20);
+	background-color: #FFF;
+	@include box-shadow( 0 0 10px 1px rgba(#000, 0.62));
+	@include clearfix;
+}
+.content__title {
+	margin: 0 0 em(10,40);
+	font-size: em(40);
+	font-style: italic;	
+	@include respond($md - 1, max){
+		font-size: em(30);
+	}
+}
+.content__title_c_or {
+	color: #ff5c00;
+}
+.content__title_c_green {
+	color: #209f00;
+}
+.content-in {
+	float: left;
+	width: 75%;
+	padding: 0 5px;
+	@include respond($sm - 1, max) {
+		width: 100%;
+	}
+}
+
+.corn, .sandwich {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	width: 284px;
+	height: 372px;
+	background: {		
+		repeat: no-repeat;
+		position: 100% 100%;
+	}
+}
+.corn {
+	background-image: image-url('content-fl/corn.png');
+	right: 0;
+	margin-right: -160px;
+}
+.sandwich {
+	background-image: image-url('content-fl/sandwich.png');
+	left: 0;
+	margin-left: -160px;
+}
+
+
+.main {
+	height: 500px;
+}

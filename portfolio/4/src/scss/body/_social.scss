@@ -1,0 +1,26 @@
+.social__icon {
+	display: inline-block;
+	line-height: 40px;
+	vertical-align: middle;
+	width: 32px;
+	text-align: center;
+	&:before {
+		font-size: 22px;
+	}
+}
+.social__icon_color_blue{
+	&:before {		
+		color: #6275c6;
+	}
+	&:hover:before {		
+		color: darken(#6275c6, 10%);
+	}	
+}
+.social__icon_color_ltblue{
+	&:before {		
+		color: #06d2ea;
+	}
+	&:hover:before {
+		color: darken(#06d2ea, 10%);
+	}	
+}

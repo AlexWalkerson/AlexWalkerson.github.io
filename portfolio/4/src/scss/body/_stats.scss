@@ -1,0 +1,17 @@
+.stats {
+	font-size: em(14);
+	line-height: 1.2;
+	max-height: 41px;
+
+}
+.stats__t, .stats__d {
+	display: inline;
+}
+.stats__t {
+	color: #adadad;	
+}
+.stats__d {
+	color: #2d9500;
+	font-weight: 700;
+	margin-left: 2px;
+}

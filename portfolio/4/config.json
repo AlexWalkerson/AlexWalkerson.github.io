@@ -1,0 +1,11 @@
+  {
+    "srcJsDir": "src/js",
+    "srcSassDir": "src/scss",
+    "srcImgDir": "src/img",
+    "srcFontsDir": "src/fonts",
+
+    "distJSDir": "assets/js",
+    "distCssDir": "assets/css",
+    "distImgDir": "assets/img",
+    "distFontsDir": "assets/fonts"
+  }

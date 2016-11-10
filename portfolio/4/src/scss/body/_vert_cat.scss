@@ -1,0 +1,28 @@
+.vertical-cat{
+	float: left;
+	width: 25%;
+	@extend %hidden-xs;
+}
+.vertical-cat__list {
+	margin: 0;
+	padding: 0;
+	list-style-position: inside;
+}
+.vertical-cat__item {	
+	color: #ff5c00;
+	font-weight: 700;
+	font-style: italic;
+	font-size: em(16);
+	line-height: 2;
+	a {
+		color: #898989;
+		margin-left: -15px;
+		&:hover {
+			color: $link-hover-color;
+		}
+	}
+	span {
+		color: #c1c1c1;
+		font-weight: normal;
+	}
+}

@@ -1,0 +1,11 @@
+.categories {
+	position: relative;
+	height: 54px;
+	background: {
+		color: #55ab00;		
+	}	
+	@include background-image( 	
+			linear-gradient(to top, rgba(#2d9400, .65) 0%, rgba(#30aa00,.65) 100%),
+	    image-url('bg_cat.png'));
+	background-size: auto;
+}

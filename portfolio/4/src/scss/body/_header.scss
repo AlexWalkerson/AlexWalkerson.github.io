@@ -1,0 +1,69 @@
+.header__top {
+	background-color: #f5f4f3;
+	box-shadow: 0px -2px 1px -1px rgba(204, 204, 204, 0.52) inset;
+}
+.header__navbar {
+	@include respond($sm){
+		width: 98%;
+		margin: 0 auto;
+	}	
+}
+.header__bott {
+	padding-top: 10px;
+}
+.header__bott_1 {
+width: 106px;
+margin: 0 auto;	
+	@include respond(420px){
+		float: left;
+	}
+}
+.header__bott_2 {
+	float: right;
+	width: 100%;
+	@include respond($sm){		
+		width: 49%;
+	}
+}
+.header__bott_3 {
+	display: none;
+	float: right;
+	@include respond(420px){
+		display: block;
+	}
+	
+	@include respond($sm){
+		width: 36%;
+	}
+}
+.header__stats {
+	display: none;
+	@include respond($sm){
+		display: block;
+		padding-bottom: 13px;
+		width: 78%;
+		margin: 0 auto;
+	}	
+	@include respond($md){
+		margin: 0 0 0 auto;
+	}
+}
+.header__search {	
+	padding-top: 7px;
+	@include respond($sm){
+		width: 78%;
+		margin: 0 auto;
+		padding-top: 0;
+	}
+	@include respond($md){
+		margin: 0 0 0 auto;
+	}
+}
+.header__feedback {
+	width: em(360px);
+	margin-left: auto;
+	@include respond(840px,max){
+		width: 268px;
+	}
+}
+
