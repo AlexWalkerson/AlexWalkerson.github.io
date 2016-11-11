@@ -6,7 +6,7 @@
 	}	
 	@include background-image( 	
 		linear-gradient(to top, rgba(#2d9400, .65) 0%, rgba(#30aa00,.65) 100%),
-		image-url('bg_cat.png'));
+		url('../img/bg_cat.png'));
 	background-size: auto;
 	border-top-left-radius: 13px;
 	border-top-right-radius: 13px;
@@ -55,12 +55,12 @@
 	}
 }
 .corn {
-	background-image: image-url('content-fl/corn.png');
+	background-image: url('../img/content-fl/corn.png');
 	right: 0;
 	margin-right: -160px;
 }
 .sandwich {
-	background-image: image-url('content-fl/sandwich.png');
+	background-image: url('../img/content-fl/sandwich.png');
 	left: 0;
 	margin-left: -160px;
 }

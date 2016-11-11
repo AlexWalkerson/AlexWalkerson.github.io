@@ -4,8 +4,8 @@
 }
 .header__navbar {
 	@include respond($sm){
-		width: 98%;
-		margin: 0 auto;
+		// width: 98%;
+		// margin: 0 auto;
 	}	
 }
 .header__bott {
@@ -14,7 +14,7 @@
 .header__bott_1 {
 width: 106px;
 margin: 0 auto;	
-	@include respond(420px){
+	@include respond(430px){
 		float: left;
 	}
 }
@@ -28,7 +28,7 @@ margin: 0 auto;
 .header__bott_3 {
 	display: none;
 	float: right;
-	@include respond(420px){
+	@include respond(430px){
 		display: block;
 	}
 	

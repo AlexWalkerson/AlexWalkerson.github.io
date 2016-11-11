@@ -4,8 +4,7 @@ module.exports = {
         // src: 'src/js/*.js',  // какие файлы конкатенировать
         src: [
         config.srcJsDir+'/transition.js', 
-        config.srcJsDir+'/collapse.js', 
-        config.srcJsDir+'/owl.carousel.min.js', 
+        config.srcJsDir+'/collapse.js',         
         // config.srcJsDir+'/dropdown.js', 
         // config.srcJsDir+'/jquery.scrollTo2.1.3.min.js', 
         // config.srcJsDir+'/waypoints.min.js', 

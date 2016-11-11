@@ -34,7 +34,7 @@
 			border-color: #327dbc;
 		}
 		.cool-btn__man{
-			background-image: image-url("cool-btn/man-1.png");
+			background-image: url("../img/cool-btn/man-1.png");
 		}
 	}
 }
@@ -78,7 +78,7 @@
 	background: {
 		image: url('../svg/man-2.svg');
 		@include fix-ie {
-			image: image-url('cool-btn/man-2.png');
+			image: url('../img/cool-btn/man-2.png');
 		}
 		repeat: no-repeat;
 		position: 100% 100%;
