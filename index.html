@@ -3,488 +3,401 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Title</title>
+	<title>Index</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--[if gt IE 8]><!-->
-	<link rel="stylesheet" href="assets/css/style.min.css">	
-	<!--<![endif]-->
-	<!--[if lte IE 8]>
-	<link rel="stylesheet" href="assets/css/style-old.min.css">	 
-  <script src="assets/js/vendor/html5shiv.min.js"></script>
-  <script src="assets/js/vendor/respond.min.js"></script>	  
-  <![endif]-->
+		<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="dist/styles/style.min.css">	
+		<!--<![endif]-->
+		<!--[if lte IE 8]>
+		<link rel="stylesheet" href="dist/styles/style-old.min.css">
+		<link rel="stylesheet" href="dist/ext/css/icons-ie7.css">	 
+	  <script src="dist/ext/js/html5shiv.min.js"></script>
+	  <script src="dist/ext/js/respond.min.js"></script>	  
+	  <![endif]-->
+	</head>
+	<body>
+		<div class="wrapper">
 
-</head>
-<body>
-	<div class="wrapper">
-		<!-- Header -->
-		<header class="header">
+			<!-- Header -->
+			<header class="header"> 				
+				<div class="navbar">
+					<div class="container">
+						<div class="row">
 
-			<div class="header__top">
-				<div class="container-fluid">
-					
-					<div class="navbar navbar_sm">						
-						<div class="navbar__head ">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>		
+								<h1 class="brand bg-red_bark">Dugon</h1>
+							</div>					
 
-							<button type="button" class="navbar__toggle" data-toggle="collapse" data-target="#navbar__collapse-1">
-								<span class="h-sr-only">Toggle navigation</span>
-								<span class="navbar__line"></span>
-								<span class="navbar__line"></span>
-								<span class="navbar__line"></span>
-								<span class="navbar__line"></span>
-								<span class="navbar__line"></span>
-							</button>
+							<div class="collapse navbar-collapse" id="navbar-collapse-1">
+								<div class="social">
+									<a href="#" class="icon-gplus" target="_blank"><span>Google</span></a>
+									<a href="#" class="icon-twitter" target="_blank"><span>Twitter</span></a>
+									<a href="#" class="icon-facebook" target="_blank"><span>Facebook</span></a>
+									<a href="#" class="icon-dribbble" target="_blank"><span>Dribbble</span></a>
+									<a href="#" class="icon-behance" target="_blank"><span>Behance</span></a>
+									<a href="#" class="icon-rss" target="_blank"><span>RSS</span></a>
+								</div>
 
-							<div class="navbar__social social">
-								<a href="#" class="social__icon social__icon_color_blue icon-facebook"></a>
-								<a href="#" class="social__icon social__icon_color_ltblue icon-twitter"></a>
-							</div>
-						</div><!-- navbar__head -->
+								<nav class="nav">
+									<a href="#" class="nav-link active">Home</a>
+									<a href="#" class="nav-link">portfolio</a>
+									<a href="#" class="nav-link">support</a>
+									<a href="#" class="nav-link">blog</a>
+									<a href="#" class="nav-link">contact</a>
+								</nav>
+							</div><!-- /navbar-collapse -->
 
-
-						<div class="collapse navbar__collapse" id="navbar__collapse-1">
-							<nav class="navbar__nav" id="navbar-collapse">
-								
-								<a href="#" class="
-								navbar__item 
-								navbar__link 
-								navbar__link_tb
-								navbar__link_color_grey">Главная</a>
-
-								<a href="#" class="
-								navbar__item 
-								navbar__link 
-								navbar__link_tb
-								navbar__link_color_grey">Доставка</a>
-
-								<a href="#" class="
-								navbar__item 
-								navbar__link 
-								navbar__link_tb
-								navbar__link_color_grey">Правила</a>
-
-								<a href="#" class="
-								navbar__item 
-								navbar__link 
-								navbar__link_tb
-								navbar__link_color_grey">Закладки <span>(0)</span></a>
-
-								<a href="#" class="
-								navbar__item 
-								navbar__link 
-								navbar__link_tb
-								navbar__link_color_grey">Мой аккаунт</a>
-
-								<a href="#" class="
-								navbar__item 
-								navbar__link 
-								navbar__link_tb
-								navbar__link_color_grey">Корзина покупок</a>
-
-								<a href="#" class="
-								navbar__item 
-								navbar__link 
-								navbar__link_tb
-								navbar__link_color_grey">Оформить заказ</a>
-
-								<a href="#" class="
-								navbar__item 
-								navbar__link 
-								navbar__link_tb
-								navbar__link_color_grey">Регистрация</a>
-
-								<a href="#" class="
-								navbar__item 
-								navbar__link 
-								navbar__link_tb
-								navbar__link_color_grey">Вход</a>
-							</nav>							
-						</div><!-- navbar__collapse -->
-					</div><!-- navbar -->	
-
-				</div>
-			</div><!-- header__top -->
-
-			<div class="header__bott">
-				<div class="container-fluid h-relative">
-
-					<div class="header__bott_1">
-						<img src="assets/img/logo.png" alt="Title">
-					</div><!-- header__bott_1 -->	
-
-					<div class="header__bott_3">
-						<div class="header__feedback">
-							<div class="feedback">
-								<p class="feedback__text">Онлайн заказ продуктов</p>
-								<p class="feedback__tel"><span class="feedback__index">(812)</span> 939-30-73</p>
-							</div><!-- feedback -->
-
-							<div class="cool-btn-group">
-								<button class="cool-btn cool-btn_orange h-left">
-									<span class="cool-btn__text cool-btn__icon cool-btn__icon_width icon-basket"></span>
-									<p class=" cool-btn__text cool-btn__text_title">Корзина</p>
-									<p class="cool-btn__text cool-btn__text_sm">Товаров: 0 (0.00) руб.</p>
-								</button>
-								<button class="cool-btn cool-btn_blue h-right">
-									<span class="cool-btn__text cool-btn__icon"></span>
-									<p class="cool-btn__text cool-btn__text_title cool-btn__text_up">Заказать</p>
-									<p class="cool-btn__text cool-btn__text_title cool-btn__text_sm cool-btn__text_up">Обратный звонок</p>	
-									<div class="cool-btn__man"></div>
-								</button>							
-							</div><!-- cool-btn -->
-						</div>		
-					</div><!-- header__bott_3 -->
-
-					<div class="header__bott_2">
-						<dl class="header__stats stats">
-							<dt class="stats__t">Сытых мужей:</dt>
-							<dd class="stats__d">4523 чел.</dd>
-							<dt class="stats__t">Довольных жён:</dt>
-							<dd class="stats__d">1523 чел.</dd>
-						</dl>
-						<div class="header__search">
-							<form action="#" class="search">
-								<input type="search" class="search__field" placeholder="Я голоден! Хочу съесть ...">
-								<input type="submit" value="Найти" class="search__btn">
-							</form>
 						</div>
-					</div><!-- header__bott_2 -->		
+					</div>
+				</div><!-- /navbar -->
+			</header>
 
-				</div>
-			</div><!-- header__bott -->
-		</header>
+			<!-- Content -->
+			<div class="content">
+				<div class="container">
 
-		<div class="categories">
-			<div class="container-fluid">	
-
-				<div class="navbar navbar_lg">						
-					<div class="navbar__head ">					
-						
-						<button type="button" class="navbar__toggle" data-toggle="collapse" data-target="#navbar__collapse-2">
-							<span class="h-sr-only">Toggle navigation</span>
-							<span class="navbar__line"></span>
-							<span class="navbar__line"></span>
-							<span class="navbar__line"></span>
-							<span class="navbar__line"></span>
-							<span class="navbar__line"></span>
-						</button>
-
-						<h3 class="navbar_title">Категории</h3>
+					<div class="row">
+						<div class="content-title-container">
+							<h2 class="content-title text-center">
+								Welcome! This is <span>Dugon</span>, a mutant duck and dragon!<br>
+								and below you can see my portfolio...
+							</h2>
+						</div>						
 					</div>
 
-					<div class="collapse navbar__collapse" id="navbar__collapse-2">
-						<ul class="navbar__nav">
+					<div class="row">
+						<main class="portfolio-content">
 
-							<li class="navbar__item">
-								<a href="#" class="navbar__link navbar__link_color_green navbar__link_ar">Бакалея</a>
-							</li>
-
-							<li class="navbar__item">
-								<a href="#" class="navbar__link navbar__link_color_green navbar__link_ar">Мясо</a>
-							</li>
-
-							<li class="navbar__item">
-								<a href="#" class="navbar__link navbar__link_color_green navbar__link_ar">Рыба</a>
-							</li>
-
-							<li class="navbar__item">
-								<a href="#" class="navbar__link navbar__link_color_green navbar__link_ar">Колбасные изделия</a>
-							</li>
-
-							<li class="navbar__item">
-								<a href="#" class="navbar__link navbar__link_color_green navbar__link_ar">Овощи, фрукты</a>
-							</li>
-
-							<li class="navbar__item">
-								<a href="#" class="navbar__link navbar__link_color_green navbar__link_ar">Хлеб, печенье, торты</a>
-							</li>
-
-							<li class="navbar__item">
-								<a href="#" class="navbar__link navbar__link_color_green navbar__link_ar">Молочные товары</a>
-							</li>
-
-							<li class="navbar__item">
-								<a href="#" class="navbar__link navbar__link_color_green navbar__link_ar">Напитки</a>
-							</li>
-							
-							<li class="navbar__item">
-								<a href="#" class="navbar__link navbar__link_color_green navbar__link_ar">Соусы</a>
-							</li>
-
-						</ul>
-					</div><!-- navbar__collapse -->
-				</div><!-- navbar -->
-
-			</div>
-		</div><!-- categories -->
-
-		<div class="content">
-			<div class="container-fluid carusel">
-				<div class="row">				
-					<div id="slideshow" class="owl-carousel">
-						<div class="item">
-							<img src="assets/img/carusel/1.jpg" alt="customer" class="img-responsive"/>
-						</div>
-						<div class="item">
-							<img src="assets/img/carusel/2.jpg" alt="customer" class="img-responsive"/>
-						</div>
-						<div class="item">
-							<img src="assets/img/carusel/3.jpg" alt="customer" class="img-responsive"/>
-						</div>
-						<div class="item">
-							<img src="assets/img/carusel/4.jpg" alt="customer" class="img-responsive"/>
-						</div>
-					</div>					
-				</div>
-			</div><!-- carusel -->
-
-			<div class="container">
-				<div class="content__line">
-					<div class="corn"></div>
-					<div class="sandwich"></div>
-				</div>
-				<div class="content-wrapper">
-
-					<div class="vertical-cat">
-						<h2 class="content__title content__title_c_or">Категории</h2>
-						<ul class="vertical-cat__list">						
-							<li class="vertical-cat__item"><a href="#">Бакалея <span>(997)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Детские товары <span>(559)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Сыры <span>(129)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Мясо <span>(186)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Рыба <span>(47)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Колбасные изделия <span>(554)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Овощи, фрукты <span>(194)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Хлеб, печенье, торты <span>(195)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Молочные товары <span>(849)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Напитки <span>(657)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Чай, кофе, како, цирконий! <span>(630)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Конфеты, шоколад <span>(388)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Соусы <span>(224)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Консервы <span>(313)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Полуфабрикаты <span>(161)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Соления <span>(7)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Чипсы, сухарики, снэки <span>(162)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Азиатская кухня <span>(104)</span></a></li>
-							<li class="vertical-cat__item"><a href="#">Сытый друг <span>(17)</span></a></li>
-						</ul>
-					</div><!-- vertical-cat -->
-
-					<div class="content-in">
-						<aside class="popular">
-							<h2 class="content__title content__title_c_green">Популярные товары</h2>
-							<div class="row">
-								<div class="gds">
-									<div class="gds__c">
-										<a href="#"><img src="assets/img/gds/gds-1.jpg" alt="goods"></a>
-									</div>
-									<p class="gds_desc">Молоко <span>49</span></p>
-								</div>
-								<div class="gds">
-									<div class="gds__c">
-										<a href="#"><img src="assets/img/gds/gds-2.jpg" alt="goods"></a>
-									</div>
-									<p class="gds_desc">Молоко сгущеное <span>33</span></p>
-								</div>
-								<div class="gds">
-									<div class="gds__c">
-										<a href="#"><img src="assets/img/gds/gds-3.jpg" alt="goods"></a>
-									</div>
-									<p class="gds_desc">Мороженое <span>113</span></p>
-								</div>
-								<div class="gds">
-									<div class="gds__c">
-										<a href="#"><img src="assets/img/gds/gds-4.jpg" alt="goods"></a>
-									</div>
-									<p class="gds_desc">Сливки <span>46</span></p>
-								</div>
-								<div class="gds">
-									<div class="gds__c">
-										<a href="#"><img src="assets/img/gds/gds-1.jpg" alt="goods"></a>
-									</div>
-									<p class="gds_desc">Молоко <span>49</span></p>
-								</div>
-								<div class="gds">
-									<div class="gds__c">
-										<a href="#"><img src="assets/img/gds/gds-2.jpg" alt="goods"></a>
-									</div>
-									<p class="gds_desc">Молоко сгущеное <span>33</span></p>
-								</div>
-								<div class="gds">
-									<div class="gds__c">
-										<a href="#"><img src="assets/img/gds/gds-3.jpg" alt="goods"></a>
-									</div>
-									<p class="gds_desc">Мороженое <span>113</span></p>
-								</div>
-								<div class="gds">
-									<div class="gds__c">
-										<a href="#"><img src="assets/img/gds/gds-4.jpg" alt="goods"></a>
-									</div>
-									<p class="gds_desc">Сливки <span>46</span></p>
-								</div>
-								<div class="gds">
-									<div class="gds__c">
-										<a href="#"><img src="assets/img/gds/gds-1.jpg" alt="goods"></a>
-									</div>
-									<p class="gds_desc">Молоко <span>49</span></p>
-								</div>
-								<div class="gds">
-									<div class="gds__c">
-										<a href="#"><img src="assets/img/gds/gds-2.jpg" alt="goods"></a>
-									</div>
-									<p class="gds_desc">Молоко сгущеное <span>33</span></p>
-								</div>
-								<div class="gds">
-									<div class="gds__c">
-										<a href="#"><img src="assets/img/gds/gds-3.jpg" alt="goods"></a>
-									</div>
-									<p class="gds_desc">Мороженое <span>113</span></p>
-								</div>
-								<div class="gds">
-									<div class="gds__c">
-										<a href="#"><img src="assets/img/gds/gds-4.jpg" alt="goods"></a>
-									</div>
-									<p class="gds_desc">Сливки <span>46</span></p>
+							<div class="portfolio-container">
+								<div class="portfolio-menu text-center">
+									<button class="portfolio-menu-item is-checked" data-filter="*">all</button>/
+									<button class="portfolio-menu-item" data-filter=".coding">coding</button>/
+									<button class="portfolio-menu-item" data-filter=".graphic">Graphic design</button>										
 								</div>
 							</div>
-						</aside><!-- popular -->
 
-						<main class="main">
-							<!-- 
-							А эту часть делать не нужно, поэтому вот кролик
-							_______Ss__________sS_________ 
-							______ss__ss______ss__ss________ 
-							______ss___ss____ss___ss_________ 
-							________ss_ss__ ss__ss__________ 
-							_________ss_-ssss__ss____________ 
-							________ss_~~__~~_ss___________ 
-							_______-ss__O__O__ss-__________ 
-							________-ss___*____ss___________ 
-							_________-ss_____ss_____________ 
-							________-ss________ss___________ 
-							_______-ss__________ss__________ 
-							__ ss___-ss_____^____ss___________ 
-							_sS__Ss_-ss____-s____ss___________ 
-							__Ss s___-ss____s___ss___________ 
-							____ ss____ss___s__ss____________ 
-							_____- ooo-_ss__s__ss_____________ 
-							___________-ooo ooo_____________ 							
-
-						-->
-					</main>
-
-					<aside class="share">
-						<h2 class="content__title content__title_c_green">Товары по акции</h2>
-						<div class="row">
-							<div class="gds">
-								<div class="gds__c">
-									<a href="#"><img src="assets/img/gds/gds-1.jpg" alt="goods"></a>
+							<div class="portfolio-container portfolio-child">
+								<div class="portfolio-item coding">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title">
+												<a href="portfolio/1/index.html" target="_blank">
+													First adaptive 
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
+											<em class="portfolio-category">Responsive</em>
+										</figcaption>
+										<div class="portfolio-img">
+											<p>Пока пусто.. <br>но ненадолго.</p>
+											<img src="dist/images/portfolio/first@min.jpg" alt="first adaptive">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark popup_img" data-mfp-src="dist/images/portfolio/first.jpg"></button>
 								</div>
-								<p class="gds_desc">Молоко <span>49</span></p>
-							</div>
-							<div class="gds">
-								<div class="gds__c">
-									<a href="#"><img src="assets/img/gds/gds-2.jpg" alt="goods"></a>
+								<div class="portfolio-item coding">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title">
+												<a href="portfolio/2/index.html" target="_blank">
+													Доктор Иванов
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
+											<em class="portfolio-category">Responsive</em>
+										</figcaption>
+										<div class="portfolio-img">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="dist/images/portfolio/maincode@min.jpg" alt="task from MainCode">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark popup_img" data-mfp-src="dist/images/portfolio/maincode.jpg"></button>
 								</div>
-								<p class="gds_desc">Молоко сгущеное <span>33</span></p>
-							</div>
-							<div class="gds">
-								<div class="gds__c">
-									<a href="#"><img src="assets/img/gds/gds-3.jpg" alt="goods"></a>
+								<div class="portfolio-item coding">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title">
+												<a href="portfolio/3/index.html" target="_blank">
+													Glow
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
+											<em class="portfolio-category">Static</em>
+										</figcaption>
+										<div class="portfolio-img">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="dist/images/portfolio/glow@min.jpg" alt="Glow">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark popup_img" data-mfp-src="dist/images/portfolio/glow.jpg"></button>
 								</div>
-								<p class="gds_desc">Мороженое <span>113</span></p>
-							</div>
-							<div class="gds">
-								<div class="gds__c">
-									<a href="#"><img src="assets/img/gds/gds-4.jpg" alt="goods"></a>
+								<div class="portfolio-item graphic">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="#" alt="alt">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
 								</div>
-								<p class="gds_desc">Сливки <span>46</span></p>
-							</div>
-							<div class="gds">
-								<div class="gds__c">
-									<a href="#"><img src="assets/img/gds/gds-1.jpg" alt="goods"></a>
+								<div class="portfolio-item graphic">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="#" alt="alt">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
 								</div>
-								<p class="gds_desc">Молоко <span>49</span></p>
-							</div>
-							<div class="gds">
-								<div class="gds__c">
-									<a href="#"><img src="assets/img/gds/gds-2.jpg" alt="goods"></a>
+								<div class="portfolio-item graphic">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="#" alt="alt">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
 								</div>
-								<p class="gds_desc">Молоко сгущеное <span>33</span></p>
-							</div>
-						</div>
-					</aside><!-- share -->
-				</div><!-- content-in -->
+								<div class="portfolio-item graphic">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="#" alt="alt">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
+								</div>
+								<div class="portfolio-item graphic">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="#" alt="alt">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
+								</div>
+								<div class="portfolio-item graphic">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="#" alt="alt">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
+								</div>
+								<div class="portfolio-item graphic">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="#" alt="alt">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
+								</div>
+								<div class="portfolio-item graphic">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="#" alt="alt">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
+								</div>
+								<div class="portfolio-item graphic">
+									<figure class="portfolio-single">
+										<figcaption>
+											<h3 class="portfolio-title">
+												<a href="" target="_blank">
+													Etiam ullamcorper
+													<i class="icon-link-ext"></i>
+												</a>
+											</h3>
+											<em class="portfolio-category">Graphic design</em>
+										</figcaption>
+										<div class="portfolio-img">
+											<p>Пока пусто.. <br>но ненадолго.</p>	
+											<img src="#" alt="alt">
+										</div>
+									</figure>
+									<button class="btn-scale icon-zoom-in bg-red_bark" data-mfp-src=""></button>
+								</div>							
+							</div> <!-- /portfolio-container -->
 
-			</div><!-- content-wrapper -->
-		</div><!-- container -->
-	</div><!-- content -->
+						</main> <!-- /portfolio-content -->
+					</div> <!-- /row -->
 
+					<div class="row">
+						<div class="portfolio-container text-center">
 
+							<!-- Pagination -->
+							<ul class="pagination">
+								<li class="pagination-item disabled">
+									<a href="#" class="pagination-link" aria-label="First">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li class="pagination-item">
+									<a href="#" class="pagination-link" aria-label="Previous">
+										<span aria-hidden="true">&lsaquo;</span>
+									</a>
+								</li>
+								<li class="pagination-item active"><a href="#" class="pagination-link">1 <span class="sr-only">(current)</span></a></li>
+								<li class="pagination-item disabled"><a href="#" class="pagination-link">2</a></li>
+								<li class="pagination-item disabled"><a href="#" class="pagination-link">3</a></li>
+								<li class="pagination-item">
+									<a href="#" class="pagination-link" aria-label="Next">
+										<span aria-hidden="true">&rsaquo;</span>
+									</a>
+								</li>
+								<li class="pagination-item disabled">
+									<a href="#" class="pagination-link" aria-label="Last">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</ul> <!-- /pagination -->
 
-	<!-- Footer -->
-	<footer class="footer">		
-		<div class="container-fluid footer__p">
-			<div class="row">
-				<div class="footer__info">
+						</div> <!-- /portfolio-container -->								
+					</div> <!-- /row -->
 
-					<ul class="footer__menu">
-						<li class="footer__item">
-							<ul class="footer__subm">
-								<li class="footer__subm-l"><h3 class="footer__subm-l_title"><a href="#">Информация</a></h3></li>
-								<li class="footer__subm-l"><a href="#">Доставка</a></li>
-								<li class="footer__subm-l"><a href="#">Правила</a></li>
-							</ul>
+				</div> <!-- /container -->
+			</div> <!-- /content -->
+
+			<!-- Footer -->
+			<footer class="footer">
+				<div class="container">
+
+					<ul class="footer-list">
+
+						<li class="footer-item">
+							<strong class="footer-title">Find Something</strong>
+							<p class="footer-text">Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.</p>
+							<div class="search">
+								<form action="#" class="form-search">
+									<input type="search" name="search-field" class="search-field" placeholder="Looking for something?"><button class="search-btn" name="search-btn" type="submit">go</button>
+								</form>
+							</div>							
 						</li>
 
-						<li class="footer__item">
-							<ul class="footer__subm">
-								<li class="footer__subm-l"><h3 class="footer__subm-l_title"><a href="#">Служба поддержки</a></h3></li>
-								<li class="footer__subm-l"><a href="#">Связаться с нами</a></li>
-								<li class="footer__subm-l"><a href="#">Карта сайта</a></li>
-							</ul>
+						<li class="footer-item">
+							<strong class="footer-title">Information</strong>
+							<p class="footer-text"> Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. </p>
+							<p class="footer-text">Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum.</p>
 						</li>
 
-						<li class="footer__item">
-							<ul class="footer__subm">
-								<li class="footer__subm-l"><h3 class="footer__subm-l_title"><a href="#">Дополнительно</a></h3></li>
-								<li class="footer__subm-l"><a href="#">Новости</a></li>								
+						<li class="footer-item">
+							<strong class="footer-title">Search by</strong>
+							<ul class="footer-cat-list">
+								<li><a href="#" class="footer-cat-link">Maecenas</a><span>(2)</span></li>
+								<li><a href="#" class="footer-cat-link">Curabitur et ligula </a><span>(12)</span></li>
+								<li><a href="#" class="footer-cat-link">Ut molestie</a><span>(3)</span></li>
+								<li><a href="#" class="footer-cat-link">Pellentesque facilisis</a><span>(1)</span></li>
+								<li><a href="#" class="footer-cat-link">Integer aliquam</a><span>(0)</span></li>
+								<li><a href="#" class="footer-cat-link">Lorem ipsum</a><span>(1)</span></li>
+								<li><a href="#" class="footer-cat-link">Etiam ullamcorper</a><span>(3)</span></li>
+								<li><a href="#" class="footer-cat-link">Vestibulum commodo</a><span>(9)</span></li>
+								<li><a href="#" class="footer-cat-link">Quisque lorem</a><span>(1)</span></li>
+								<li><a href="#" class="footer-cat-link">Vestibulum </a><span>(23)</span></li>
+								<li><a href="#" class="footer-cat-link">Maecnas</a><span>(2)</span></li>
+								<li><a href="#" class="footer-cat-link">Curabitur et ligula </a><span>12)</span></li>
+								<li><a href="#" class="footer-cat-link">Ut molestie</a><span>(3)</span></li>
+								<li><a href="#" class="footer-cat-link">Pellentesque facilisis</a><span>(1)</span></li>
+								<li><a href="#" class="footer-cat-link">Integer aliquam</a><span>(0)</span></li>
+								<li><a href="#" class="footer-cat-link">Lorem ipsum</a><span>(1)</span></li>
+								<li><a href="#" class="footer-cat-link">Etiam ullamcorper</a><span>(3)</span></li>
 							</ul>
-						</li>
+						</li>	
 
-						<li class="footer__item">
-							<ul class="footer__subm">
-								<li class="footer__subm-l"><h3 class="footer__subm-l_title"><a href="#">Личный кабинет</a></h3></li>
-								<li class="footer__subm-l"><a href="#">Личный кабинет</a></li>
-								<li class="footer__subm-l"><a href="#">История заказов</a></li>
-								<li class="footer__subm-l"><a href="#">Закладки</a></li>
-								<li class="footer__subm-l"><a href="#">Рассылка</a></li>
-							</ul>
-						</li>						
-					</ul>
-				</div>
+					</ul> <!-- /footer-list -->
 
-				<div class="footer__logo">
-					<!--[if gt IE 8]><!-->
-					<object type="image/svg+xml" data="assets/svg/footer-pic.svg" class="footer__pic"></object>
-					<!--<![endif]-->
-					<!--[if lte IE 8]>
-					<div class="footer__pic"></div>
-					<![endif]-->
-					<p class="footer__pic-text">Мы экономим ваше время.</p>
-				</div>
-			</div>			
+					<div class="row">
+						<div class="copyright">Alex Liar 2016</div>
+					</div>
 
-		</div>	
-		<div class="footer__bott"></div>
-	</footer> <!-- /footer -->
+				</div> <!-- /container -->
+			</footer> <!-- /footer -->
 
-</div><!-- wrapper -->
+		</div> <!-- /wrapper -->
 
-<script src='assets/js/Vendor/jquery-1.12.0.min.js'></script>
-<script src='assets/js/Vendor/owl.carousel.min.js'></script>
-<script src='assets/js/build.min.js' defer></script>
+		<script src='dist/ext/js/jquery-1.12.0.min.js'></script>
+		<script src='dist/scripts/build.min.js' defer></script>
 
-
-</body>
-</html>
+	</body>
+	</html>
